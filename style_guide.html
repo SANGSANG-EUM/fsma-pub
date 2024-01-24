@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>주인장</title>
+
+  <!-- src > css, js 연결 -->
+  <link rel="stylesheet" href="./src/plugin/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./src/css/fonts.css">
+  <link rel="stylesheet" href="./src/css/common.css">
+  <link rel="stylesheet" href="./src/css/ui.css">
+  <link rel="stylesheet" href="./src/css/normal.css">
+  <link rel="stylesheet" href="./src/css/responsive.css">
+
+  <script src="./src/js/jquery-3.7.0.min.js" defer></script>
+  <script src="./src/plugin/feather.min.js" defer></script>
+  <script src="./src/plugin/prefixfree.min.js" defer></script>
+  <script src="./src/plugin/matchheight/jquery.matchHeight.js" defer></script>
+  <script src="./src/plugin/swiper/swiper-bundle.min.js" defer></script>
+  <script src="./src/js/common.js" defer></script>
+  <script src="./src/js/normal.js" type="module" defer></script>
+
+  <!-- 스타일가이드 페이지용 css -->
+  <style>
+    .container {padding-top: 6.25rem; padding-bottom: 6.25rem;}
+    .section {padding: 3.125rem 0;}
+    .sb_section {margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #000;}
+    .ui_con {margin-top: 10px;}
+
+    .page-title {color: var(--color-main);}
+    .flex {display: flex; flex-flow: row wrap; align-items: flex-start; justify-content: flex-start;}
+    .gap {gap: 15px;}
+  </style>
+</head>
+<body>
+
+<div id="document">
+  <div class="container">
+
+    <h1 class="page-title">UI Style Guide</h1>
+
+    <div class="section">
+      <h3>#Typography</h3>
+      <div class="sb_section">
+        <h1>H1 - Extra bold, 5rem</h1>
+        <h2>H2 - Bold, 4rem</h2>
+        <h3>H3 - Bold, 3rem</h3>
+        <h4>H4 - Medium, 2.5rem</h4>
+        <h5>H5 - Medium, 2rem</h5>
+        <h6>H6 - Medium, 1.6rem</h6>
+      </div>
+      <div class="sb_section">
+        <p class="tp-expl">Body Text</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>#Buttons</h3>
+      <div class="sb_section">
+        <h5>-- Size</h5>
+        <ul class="ui_con flex">
+          <li class="flex gap">
+            <button type="button" class="ui-btn stBlack sizeL">Button</button>
+            <button type="button" class="ui-btn stBlack sizeM">Button</button>
+            <button type="button" class="ui-btn stBlack sizeS">Button</button>
+          </li>
+        </ul>
+      </div>
+      <div class="sb_section">
+        <h5>-- Round</h5>
+        <ul class="ui_con flex">
+          <li class="flex gap">
+            <button type="button" class="ui-btn stBlack sizeM round5">Button</button>
+            <button type="button" class="ui-btn stBlack sizeM round10">Button</button>
+            <button type="button" class="ui-btn stBlack sizeM round25">Button</button>
+            <a href="" class="ui-btn stBlack sizeM round5">Link</a>
+          </li>
+        </ul>
+      </div>
+      <div class="sb_section">
+        <h5>-- Style</h5>
+        <ul class="ui_con flex">
+          <li class="flex gap">
+            <button type="button" class="ui-btn stBlack sizeM">Button</button>
+            <button type="button" class="ui-btn stWhite sizeM">Button</button>
+            <button type="button" class="ui-btn st1 sizeM">Button</button>
+          </li>
+        </ul>
+      </div>
+      <div class="sb_section">
+        <h5>-- Active & Disabled</h5>
+        <ul class="ui_con flex">
+          <li class="flex gap">
+            <button type="button" class="ui-btn active sizeM">Button</button>
+            <button type="button" class="ui-btn disabled sizeM">Button</button>
+            <button type="button" class="ui-btn sizeM" disabled>Button</button>
+          </li>
+        </ul>
+      </div>
+      <div class="sb_section">
+        <h5>-- Icon</h5>
+        <ul class="ui_con flex">
+          <li class="flex gap">
+            <button type="button" class="ui-btn stBlack sizeM" data="stIconLeft" >
+              <i data-feather="github" class="icn"></i>
+              <span class="txt">Button</span>
+            </button>
+            <button type="button" class="ui-btn stBlack sizeM" data="stIconRight" >
+              <span class="txt">Button</span>
+              <i data-feather="gitlab" class="icn"></i>
+            </button>
+            <button type="button" class="ui-btn stBlack sizeM" data="stIconLeft2" >
+              <i data-feather="chevron-left" class="icn"></i>
+              <span class="txt">Button</span>
+            </button>
+            <button type="button" class="ui-btn stBlack sizeM" data="stIconRight2" >
+              <span class="txt">Button</span>
+              <i data-feather="chevron-down" class="icn"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="sb_section">
+        <h5>-- More Link</h5>
+        <ul class="ui_con">
+          <li class="flex">
+            <a href="" class="ui-btn more">전체보기</a>
+          </li>
+          <li>
+            <a href="" class="ui-btn round20 moreLong">
+              <span class="text">오늘만 할인상품 전체보기</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>#Form Elements</h3>
+      <div class="sb_section">
+        <h5>-- Basic</h5>
+        <ul class="ui_con flex">
+          <li class="flex gap">
+            <input type="text" name="" id="" class="frm-input" placeholder="텍스트 입력">
+            <input type="text" name="" id="" class="frm-input" placeholder="텍스트 입력" disabled>
+            <select name="" id="" class="frm-select">
+              <option value="">옵션 선택</option>
+              <option value="">옵션 A</option>
+              <option value="">옵션 B</option>
+            </select>
+            <select name="" id="" class="frm-select" disabled>
+              <option value="" disabled>옵션 선택</option>
+              <option value="">옵션 A</option>
+              <option value="">옵션 B</option>
+            </select>
+          </li>
+        </ul>
+        <br/>
+        <ul class="ui_con flex">
+          <li class="flex gap">
+            <div class="frm-choice">
+              <input type="checkbox" name="chk" id="chk1" value="">
+              <label for="chk1">체크버튼</label>
+            </div>
+            <div class="frm-choice">
+              <input type="checkbox" name="chk" id="chkActive1" value="" checked>
+              <label for="chkActive1">체크버튼</label>
+            </div>
+            <div class="frm-choice">
+              <input type="radio" name="radio" id="radio1" value="">
+              <label for="radioActive1">라디오버튼</label>
+            </div>
+            <div class="frm-choice">
+              <input type="radio" name="radio" id="radioActive1" value="" checked>
+              <label for="radioActive1">라디오버튼</label>
+            </div>
+          </li>
+        </ul>
+        <br/>
+        <textarea name="" id="" class="frm-txtar w-per100" placeholder="내용 입력"></textarea>
+        <br/>
+        <div class="search">
+          <input type="text" class="w-per100 round100 keyword">
+          <button type="submit" class="ui-btn submit" title="검색하기"></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>#Components</h3>
+      <div class="sb_section">
+        <div id="" class="cp-horizon-menu">
+          <div class="swiper-wrapper">
+            <a href="" data-id="home" class="swiper-slide btn">홈</a>
+            <a href="" data-id="best" class="swiper-slide btn">베스트</a>
+            <a href="" data-id="new" class="swiper-slide btn">신상품</a>
+            <a href="" data-id="today" class="swiper-slide btn">오늘만</a>
+            <a href="" data-id="live" class="swiper-slide btn">라이브</a>
+            <a href="" data-id="exhibition" class="swiper-slide btn">기획전</a>
+            <a href="" data-id="raffle" class="swiper-slide btn">래플응모</a>
+            <a href="" data-id="memberHall" class="swiper-slide btn">전용관</a>
+            <a href="" data-id="regularDelivery" class="swiper-slide btn">정기배송</a>
+            <a href="" data-id="customerService" class="swiper-slide btn">고객센터</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="sb_section">
+        <div class="cp-quick-category">
+          <a href="" class="ui-btn">
+            <i class="icon">
+              <img src="./src/img/t-category.png" alt="가공식품">
+            </i>
+            <p class="name">가공식품</p>
+          </a>
+          <a href="" class="ui-btn">
+            <i class="icon">
+              <img src="./src/img/t-category.png" alt="냉장식품">
+            </i>
+            <p class="name">냉장식품</p>
+          </a>
+          <a href="" class="ui-btn">
+            <i class="icon">
+              <img src="./src/img/t-category.png" alt="조미료/소스">
+            </i>
+            <p class="name">조미료/소스</p>
+          </a>
+          <a href="" class="ui-btn">
+            <i class="icon">
+              <img src="./src/img/t-category.png" alt="김치/반찬">
+            </i>
+            <p class="name">김치/반찬</p>
+          </a>
+          <a href="" class="ui-btn">
+            <i class="icon">
+              <img src="./src/img/t-category.png" alt="생수/음료">
+            </i>
+            <p class="name">생수/음료</p>
+          </a>
+          <a href="" class="ui-btn">
+            <i class="icon">
+              <img src="./src/img/t-category.png" alt="쌀/잡곡">
+            </i>
+            <p class="name">쌀/잡곡</p>
+          </a>
+          <a href="" class="ui-btn">
+            <i class="icon">
+              <img src="./src/img/t-category.png" alt="과일/채소">
+            </i>
+            <p class="name">과일/채소</p>
+          </a>
+          <a href="" class="ui-btn">
+            <i class="icon">
+              <img src="./src/img/t-category.png" alt="정육/계란">
+            </i>
+            <p class="name">정육/계란</p>
+          </a>
+          <a href="" class="ui-btn">
+            <i class="icon">
+              <img src="./src/img/t-category.png" alt="수산/건어물">
+            </i>
+            <p class="name">수산/건어물</p>
+          </a>
+          <a href="" class="ui-btn viewAll">
+            <i class="icon"></i>
+            <p class="name">전체보기</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="sb_section">
+        <div class="flex gap">
+          <div class="cp-item" style="width: 30rem;">
+            <div class="round50 thumb_area">
+              <a href="" class="thumb">
+                <img src="./src/img/t-product.png" alt="">
+              </a>
+              <button type="button" class="ui-btn wish-btn" title="관심상품 등록하기"></button>
+            </div>
+            <a href="" class="info_area">
+              <p class="name">(기본)한끼으뜸쌀 20kg</p>
+              <p class="dc-price">30,000원</p>
+              <p class="price">
+                <span class="dc-percent">10%</span>
+                27,000원
+              </p>
+            </a>
+            <div class="tag_area">
+              <span class="tag coupon">쿠폰</span>
+              <span class="tag freeDelivery">무료배송</span>
+            </div>
+          </div>
+
+          <div class="cp-item" style="width: 30rem;">
+            <div class="round50 thumb_area">
+              <span class="num">1</span>
+              <a href="" class="thumb">
+                <img src="./src/img/t-product.png" alt="">
+              </a>
+              <button type="button" class="ui-btn wish-btn" title="관심상품 등록하기"></button>
+            </div>
+            <a href="" class="info_area">
+              <p class="name">(인덱스)한끼으뜸쌀 20kg</p>
+              <p class="dc-price">30,000원</p>
+              <p class="price">
+                <span class="dc-percent">10%</span>
+                27,000원
+              </p>
+            </a>
+            <div class="tag_area">
+              <span class="tag coupon">쿠폰</span>
+              <span class="tag freeDelivery">무료배송</span>
+            </div>
+          </div>
+
+          <div class="cp-item time" style="width: 30rem;">
+            <div class="round50 thumb_area">
+              <a href="" class="thumb">
+                <img src="./src/img/t-product.png" alt="">
+              </a>
+              <div class="timeLimit">
+                <strong class="timeView" data-deadline="2024-01-21 23:59:59">00:00:00</strong> 남았어요
+              </div>
+            </div>
+            <a href="" class="info_area">
+              <p class="name">(타임)한끼으뜸쌀 20kg</p>
+              <p class="dc-price">30,000원</p>
+              <p class="price">
+                <span class="dc-percent">10%</span>
+                27,000원
+              </p>
+            </a>
+            <div class="tag_area">
+              <span class="tag coupon">쿠폰</span>
+              <span class="tag freeDelivery">무료배송</span>
+            </div>
+          </div>
+
+          <div class="cp-item time" style="width: 30rem;">
+            <div class="round50 thumb_area">
+              <a href="" class="thumb">
+                <img src="./src/img/t-product.png" alt="">
+              </a>
+            </div>
+            <a href="" class="info_area small">
+              <p class="name">(작은텍스트)한끼으뜸쌀 20kg</p>
+              <p class="dc-price">30,000원</p>
+              <p class="price">
+                <span class="dc-percent">10%</span>
+                27,000원
+              </p>
+            </a>
+            <div class="tag_area">
+              <span class="tag coupon">쿠폰</span>
+              <span class="tag freeDelivery">무료배송</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sb_section">
+        <a href="" class="cp-live" style="width: 44rem;">
+          <div class="round50 thumb_area">
+            <div href="" class="thumb">
+              <img src="./src/img/t-live.png" alt="">
+            </div>
+          </div>
+          <div class="info_area">
+            <div class="round60 live-reserv">
+              <span class="round60 t1">LIVE</span>
+              <span class="t2">1/20 오후 1:00</span>
+            </div>
+            <div class="live-title">청송사과</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="sb_section">
+        <nav href="" id="cp-dockbar">
+          <a href="" id="dockbar-shop" class="btn on">
+            <span class="icon"></span>
+            <p class="text">장보기</p>
+          </a>
+          <a href="" id="dockbar-member" class="btn">
+            <span class="icon"></span>
+            <p class="text">회원사현황</p>
+          </a>
+          <a href="" id="dockbar-home" class="btn">
+            <span class="icon"></span>
+            <p class="text">홈</p>
+          </a>
+          <a href="" id="dockbar-market" class="btn">
+            <span class="icon"></span>
+            <p class="text">중고장터</p>
+          </a>
+          <a href="" id="dockbar-affiliate" class="btn">
+            <span class="icon"></span>
+            <p class="text">제휴서비스</p>
+          </a>
+        </nav>
+      </div>
+
+      <div class="sb_section">
+        <div class="cp-title">
+          <div class="left">
+            <h3>베스트</h3>
+            <p class="tp-expl">주인장에서 제일 잘 나가요!</p>
+          </div>
+          <div class="right">
+            <a href="" class="ui-btn more">전체보기</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script type="module">
+import * as f from './src/js/function.js';
+
+let horizonMenuTarget = '.cp-horizon-menu';
+let horizonMenuActive = 'home';
+let horizonMenu = f.hrizonMenu(horizonMenuTarget, horizonMenuActive);
+
+f.timeSale('.timeView');
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>주인장</title>
+
+  <!-- src > css, js 연결 -->
+  <link rel="stylesheet" href="./src/plugin/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./src/css/fonts.css">
+  <link rel="stylesheet" href="./src/css/common.css">
+  <link rel="stylesheet" href="./src/css/ui.css">
+  <link rel="stylesheet" href="./src/css/normal.css">
+  <link rel="stylesheet" href="./src/css/responsive.css">
+
+  <script src="./src/js/jquery-3.7.0.min.js" defer></script>
+  <script src="./src/plugin/feather.min.js" defer></script>
+  <script src="./src/plugin/prefixfree.min.js" defer></script>
+  <script src="./src/plugin/matchheight/jquery.matchHeight.js" defer></script>
+  <script src="./src/plugin/swiper/swiper-bundle.min.js" defer></script>
+  <script src="./src/js/common.js" defer></script>
+  <script src="./src/js/normal.js" type="module" defer></script>
+<body>
+
+<div id="document">
+  <!-- header { -->
+  <div id="header" class="container main-header">
+    <h1 class="logo">
+      <a href="">
+        <i>LOGO</i>
+      </a>
+    </h1>
+    <div class="util">
+      <div class="search">
+        <input type="text" class="w-per100 round100 keyword">
+        <button type="submit" class="ui-btn submit" title="검색하기"></button>
+      </div>
+      <ul class="gbtn_wrap">
+        <li>
+          <a href="" class="gbtn cart"></a>
+        </li>
+        <li>
+          <a href="" class="gbtn alarm"></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <nav href="" id="cp-dockbar">
+    <a href="" id="dockbar-shop" class="btn on">
+      <span class="icon"></span>
+      <p class="text">장보기</p>
+    </a>
+    <a href="" id="dockbar-member" class="btn">
+      <span class="icon"></span>
+      <p class="text">회원사현황</p>
+    </a>
+    <a href="" id="dockbar-home" class="btn">
+      <span class="icon"></span>
+      <p class="text">홈</p>
+    </a>
+    <a href="" id="dockbar-market" class="btn">
+      <span class="icon"></span>
+      <p class="text">중고장터</p>
+    </a>
+    <a href="" id="dockbar-affiliate" class="btn">
+      <span class="icon"></span>
+      <p class="text">제휴서비스</p>
+    </a>
+  </nav>
+
+  <div id="topMenu" class="container left">
+    <button type="button" class="ui-btn st1 round20 gnb-btn">
+      <span class="bar"></span>
+    </button>
+    <nav class="cp-horizon-menu qk-menu">
+      <div class="swiper-wrapper">
+        <a href="" data-id="home" class="swiper-slide btn">홈</a>
+        <a href="" data-id="best" class="swiper-slide btn">베스트</a>
+        <a href="" data-id="new" class="swiper-slide btn">신상품</a>
+        <a href="" data-id="today" class="swiper-slide btn">오늘만</a>
+        <a href="" data-id="live" class="swiper-slide btn">라이브</a>
+        <a href="" data-id="exhibition" class="swiper-slide btn">기획전</a>
+        <a href="" data-id="raffle" class="swiper-slide btn">래플응모</a>
+        <a href="" data-id="memberHall" class="swiper-slide btn">전용관</a>
+        <a href="" data-id="regularDelivery" class="swiper-slide btn">정기배송</a>
+        <a href="" data-id="customerService" class="swiper-slide btn">고객센터</a>
+      </div>
+    </nav>
+  </div>
+  <!-- } header -->
+
+  <!-- contents { -->
+  <div id="contents" class="main-contents">
+    <div class="container section main_visual">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide item">
+            <a href="" class="link">
+              <figure class="image">
+                <img src="./src/img/t-main-visual_1.jpg" alt="갓잡은 신선함, 몸에도 좋고 맛도 좋은 등푸른 생선, 등푸른 간고등어 2마리 12,000원">
+              </figure>
+            </a>
+          </div>
+          <div class="swiper-slide item">
+            <figure class="image">
+              <img src="./src/img/t-main-visual_1.jpg" alt="갓잡은 신선함, 몸에도 좋고 맛도 좋은 등푸른 생선, 등푸른 간고등어 2마리 12,000원">
+            </figure>
+          </div>
+        </div>
+        <div class="round100 control">
+          <div class="pagination"></div>
+          <button type="button" class="ui-btn playToggle" title="일시정지"></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container section main_category">
+      <div class="cp-quick-category">
+        <a href="" class="ui-btn">
+          <i class="icon">
+            <img src="./src/img/t-category.png" alt="가공식품">
+          </i>
+          <p class="name">가공식품</p>
+        </a>
+        <a href="" class="ui-btn">
+          <i class="icon">
+            <img src="./src/img/t-category.png" alt="냉장식품">
+          </i>
+          <p class="name">냉장식품</p>
+        </a>
+        <a href="" class="ui-btn">
+          <i class="icon">
+            <img src="./src/img/t-category.png" alt="조미료/소스">
+          </i>
+          <p class="name">조미료/소스</p>
+        </a>
+        <a href="" class="ui-btn">
+          <i class="icon">
+            <img src="./src/img/t-category.png" alt="김치/반찬">
+          </i>
+          <p class="name">김치/반찬</p>
+        </a>
+        <a href="" class="ui-btn">
+          <i class="icon">
+            <img src="./src/img/t-category.png" alt="생수/음료">
+          </i>
+          <p class="name">생수/음료</p>
+        </a>
+        <a href="" class="ui-btn">
+          <i class="icon">
+            <img src="./src/img/t-category.png" alt="쌀/잡곡">
+          </i>
+          <p class="name">쌀/잡곡</p>
+        </a>
+        <a href="" class="ui-btn">
+          <i class="icon">
+            <img src="./src/img/t-category.png" alt="과일/채소">
+          </i>
+          <p class="name">과일/채소</p>
+        </a>
+        <a href="" class="ui-btn">
+          <i class="icon">
+            <img src="./src/img/t-category.png" alt="정육/계란">
+          </i>
+          <p class="name">정육/계란</p>
+        </a>
+        <a href="" class="ui-btn">
+          <i class="icon">
+            <img src="./src/img/t-category.png" alt="수산/건어물">
+          </i>
+          <p class="name">수산/건어물</p>
+        </a>
+        <a href="" class="ui-btn viewAll">
+          <i class="icon"></i>
+          <p class="name">전체보기</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="section main_best">
+      <div class="container cp-title">
+        <div class="left">
+          <h3>베스트</h3>
+          <p class="tp-expl">주인장에서 제일 잘 나가요!</p>
+        </div>
+        <div class="right">
+          <a href="" class="ui-btn more">전체보기</a>
+        </div>
+      </div>
+      <div class="container left main_best-slide">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide cp-item">
+              <div class="round50 thumb_area">
+                <span class="num"></span>
+                <a href="" class="thumb">
+                  <img src="./src/img/t-product.png" alt="">
+                </a>
+                <button type="button" class="ui-btn wish-btn" title="관심상품 등록하기"></button>
+              </div>
+              <a href="" class="info_area">
+                <p class="name">한끼으뜸쌀 20kg</p>
+                <p class="dc-price">30,000원</p>
+                <p class="price">
+                  <span class="dc-percent">10%</span>
+                  27,000원
+                </p>
+              </a>
+              <div class="tag_area">
+                <span class="tag coupon">쿠폰</span>
+                <span class="tag freeDelivery">무료배송</span>
+              </div>
+            </div>
+            <div class="swiper-slide cp-item">
+              <div class="round50 thumb_area">
+                <span class="num"></span>
+                <a href="" class="thumb">
+                  <img src="./src/img/t-product.png" alt="">
+                </a>
+                <button type="button" class="ui-btn wish-btn" title="관심상품 등록하기"></button>
+              </div>
+              <a href="" class="info_area">
+                <p class="name">한끼으뜸쌀 20kg</p>
+                <p class="dc-price">30,000원</p>
+                <p class="price">
+                  <span class="dc-percent">10%</span>
+                  27,000원
+                </p>
+              </a>
+              <div class="tag_area">
+                <span class="tag coupon">쿠폰</span>
+                <span class="tag freeDelivery">무료배송</span>
+              </div>
+            </div>
+            <div class="swiper-slide cp-item">
+              <div class="round50 thumb_area">
+                <span class="num"></span>
+                <a href="" class="thumb">
+                  <img src="./src/img/t-product.png" alt="">
+                </a>
+                <button type="button" class="ui-btn wish-btn" title="관심상품 등록하기"></button>
+              </div>
+              <a href="" class="info_area">
+                <p class="name">한끼으뜸쌀 20kg</p>
+                <p class="dc-price">30,000원</p>
+                <p class="price">
+                  <span class="dc-percent">10%</span>
+                  27,000원
+                </p>
+              </a>
+              <div class="tag_area">
+                <span class="tag coupon">쿠폰</span>
+                <span class="tag freeDelivery">무료배송</span>
+              </div>
+            </div>
+            <div class="swiper-slide cp-item">
+              <div class="round50 thumb_area">
+                <span class="num"></span>
+                <a href="" class="thumb">
+                  <img src="./src/img/t-product.png" alt="">
+                </a>
+                <button type="button" class="ui-btn wish-btn" title="관심상품 등록하기"></button>
+              </div>
+              <a href="" class="info_area">
+                <p class="name">한끼으뜸쌀 20kg</p>
+                <p class="dc-price">30,000원</p>
+                <p class="price">
+                  <span class="dc-percent">10%</span>
+                  27,000원
+                </p>
+              </a>
+              <div class="tag_area">
+                <span class="tag coupon">쿠폰</span>
+                <span class="tag freeDelivery">무료배송</span>
+              </div>
+            </div>
+            <div class="swiper-slide cp-item">
+              <div class="round50 thumb_area">
+                <span class="num"></span>
+                <a href="" class="thumb">
+                  <img src="./src/img/t-product.png" alt="">
+                </a>
+                <button type="button" class="ui-btn wish-btn" title="관심상품 등록하기"></button>
+              </div>
+              <a href="" class="info_area">
+                <p class="name">한끼으뜸쌀 20kg</p>
+                <p class="dc-price">30,000원</p>
+                <p class="price">
+                  <span class="dc-percent">10%</span>
+                  27,000원
+                </p>
+              </a>
+              <div class="tag_area">
+                <span class="tag coupon">쿠폰</span>
+                <span class="tag freeDelivery">무료배송</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section main_recomm">
+      <div class="container cp-title">
+        <div class="left">
+          <h3>추천상품</h3>
+          <p class="tp-expl">주인장에서 추천하는 상품이에요!</p>
+        </div>
+        <div class="right">
+          <a href="" class="ui-btn more">전체보기</a>
+        </div>
+      </div>
+      <div class="container left main_recomm-slide">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide cp-item">
+              <div class="round50 thumb_area">
+                <a href="" class="thumb">
+                  <img src="./src/img/t-product.png" alt="">
+                </a>
+                <button type="button" class="ui-btn wish-btn" title="관심상품 등록하기"></button>
+              </div>
+              <a href="" class="info_area small">
+                <p class="name">한끼으뜸쌀 20kg</p>
+                <p class="dc-price">30,000원</p>
+                <p class="price">
+                  <span class="dc-percent">10%</span>
+                  27,000원
+                </p>
+              </a>
+              <div class="tag_area">
+                <span class="tag coupon">쿠폰</span>
+                <span class="tag freeDelivery">무료배송</span>
+              </div>
+            </div>
+            <div class="swiper-slide cp-item">
+              <div class="round50 thumb_area">
+                <a href="" class="thumb">
+                  <img src="./src/img/t-product.png" alt="">
+                </a>
+                <button type="button" class="ui-btn wish-btn" title="관심상품 등록하기"></button>
+              </div>
+              <a href="" class="info_area small">
+                <p class="name">한끼으뜸쌀 20kg</p>
+                <p class="dc-price">30,000원</p>
+                <p class="price">
+                  <span class="dc-percent">10%</span>
+                  27,000원
+                </p>
+              </a>
+              <div class="tag_area">
+                <span class="tag coupon">쿠폰</span>
+                <span class="tag freeDelivery">무료배송</span>
+              </div>
+            </div>
+            <div class="swiper-slide cp-item">
+              <div class="round50 thumb_area">
+                <a href="" class="thumb">
+                  <img src="./src/img/t-product.png" alt="">
+                </a>
+                <button type="button" class="ui-btn wish-btn" title="관심상품 등록하기"></button>
+              </div>
+              <a href="" class="info_area small">
+                <p class="name">한끼으뜸쌀 20kg</p>
+                <p class="dc-price">30,000원</p>
+                <p class="price">
+                  <span class="dc-percent">10%</span>
+                  27,000원
+                </p>
+              </a>
+              <div class="tag_area">
+                <span class="tag coupon">쿠폰</span>
+                <span class="tag freeDelivery">무료배송</span>
+              </div>
+            </div>
+            <div class="swiper-slide cp-item">
+              <div class="round50 thumb_area">
+                <a href="" class="thumb">
+                  <img src="./src/img/t-product.png" alt="">
+                </a>
+                <button type="button" class="ui-btn wish-btn" title="관심상품 등록하기"></button>
+              </div>
+              <a href="" class="info_area small">
+                <p class="name">한끼으뜸쌀 20kg</p>
+                <p class="dc-price">30,000원</p>
+                <p class="price">
+                  <span class="dc-percent">10%</span>
+                  27,000원
+                </p>
+              </a>
+              <div class="tag_area">
+                <span class="tag coupon">쿠폰</span>
+                <span class="tag freeDelivery">무료배송</span>
+              </div>
+            </div>
+            <div class="swiper-slide cp-item">
+              <div class="round50 thumb_area">
+                <a href="" class="thumb">
+                  <img src="./src/img/t-product.png" alt="">
+                </a>
+                <button type="button" class="ui-btn wish-btn" title="관심상품 등록하기"></button>
+              </div>
+              <a href="" class="info_area small">
+                <p class="name">한끼으뜸쌀 20kg</p>
+                <p class="dc-price">30,000원</p>
+                <p class="price">
+                  <span class="dc-percent">10%</span>
+                  27,000원
+                </p>
+              </a>
+              <div class="tag_area">
+                <span class="tag coupon">쿠폰</span>
+                <span class="tag freeDelivery">무료배송</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section main_new">
+      <div class="container cp-title">
+        <div class="left">
+          <h3>신상품</h3>
+          <p class="tp-expl">새로나온 신상품을 만나보세요!</p>
+        </div>
+        <div class="right">
+          <a href="" class="ui-btn more">전체보기</a>
+        </div>
+      </div>
+      <div class="container left main_new-slide">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide cp-item">
+              <div class="round50 thumb_area">
+                <a href="" class="thumb">
+                  <img src="./src/img/t-product.png" alt="">
+                </a>
+                <button type="button" class="ui-btn wish-btn" title="관심상품 등록하기"></button>
+              </div>
+              <a href="" class="info_area small">
+                <p class="name">한끼으뜸쌀 20kg</p>
+                <p class="dc-price">30,000원</p>
+                <p class="price">
+                  <span class="dc-percent">10%</span>
+                  27,000원
+                </p>
+              </a>
+              <div class="tag_area">
+                <span class="tag coupon">쿠폰</span>
+                <span class="tag freeDelivery">무료배송</span>
+              </div>
+            </div>
+            <div class="swiper-slide cp-item">
+              <div class="round50 thumb_area">
+                <a href="" class="thumb">
+                  <img src="./src/img/t-product.png" alt="">
+                </a>
+                <button type="button" class="ui-btn wish-btn" title="관심상품 등록하기"></button>
+              </div>
+              <a href="" class="info_area small">
+                <p class="name">한끼으뜸쌀 20kg</p>
+                <p class="dc-price">30,000원</p>
+                <p class="price">
+                  <span class="dc-percent">10%</span>
+                  27,000원
+                </p>
+              </a>
+              <div class="tag_area">
+                <span class="tag coupon">쿠폰</span>
+                <span class="tag freeDelivery">무료배송</span>
+              </div>
+            </div>
+            <div class="swiper-slide cp-item">
+              <div class="round50 thumb_area">
+                <a href="" class="thumb">
+                  <img src="./src/img/t-product.png" alt="">
+                </a>
+                <button type="button" class="ui-btn wish-btn" title="관심상품 등록하기"></button>
+              </div>
+              <a href="" class="info_area small">
+                <p class="name">한끼으뜸쌀 20kg</p>
+                <p class="dc-price">30,000원</p>
+                <p class="price">
+                  <span class="dc-percent">10%</span>
+                  27,000원
+                </p>
+              </a>
+              <div class="tag_area">
+                <span class="tag coupon">쿠폰</span>
+                <span class="tag freeDelivery">무료배송</span>
+              </div>
+            </div>
+            <div class="swiper-slide cp-item">
+              <div class="round50 thumb_area">
+                <a href="" class="thumb">
+                  <img src="./src/img/t-product.png" alt="">
+                </a>
+                <button type="button" class="ui-btn wish-btn" title="관심상품 등록하기"></button>
+              </div>
+              <a href="" class="info_area small">
+                <p class="name">한끼으뜸쌀 20kg</p>
+                <p class="dc-price">30,000원</p>
+                <p class="price">
+                  <span class="dc-percent">10%</span>
+                  27,000원
+                </p>
+              </a>
+              <div class="tag_area">
+                <span class="tag coupon">쿠폰</span>
+                <span class="tag freeDelivery">무료배송</span>
+              </div>
+            </div>
+            <div class="swiper-slide cp-item">
+              <div class="round50 thumb_area">
+                <a href="" class="thumb">
+                  <img src="./src/img/t-product.png" alt="">
+                </a>
+                <button type="button" class="ui-btn wish-btn" title="관심상품 등록하기"></button>
+              </div>
+              <a href="" class="info_area small">
+                <p class="name">한끼으뜸쌀 20kg</p>
+                <p class="dc-price">30,000원</p>
+                <p class="price">
+                  <span class="dc-percent">10%</span>
+                  27,000원
+                </p>
+              </a>
+              <div class="tag_area">
+                <span class="tag coupon">쿠폰</span>
+                <span class="tag freeDelivery">무료배송</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section main_today">
+      <div class="container cp-title">
+        <div class="left">
+          <h3>오늘만</h3>
+          <p class="tp-expl">지금 놓치면 끝! 오늘만 특가할인!</p>
+        </div>
+      </div>
+      <div class="container left main_today-slide">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide cp-item time">
+              <div class="round50 thumb_area">
+                <a href="" class="thumb">
+                  <img src="./src/img/t-product.png" alt="">
+                </a>
+                <div class="timeLimit">
+                  <strong class="timeView" data-deadline="2024-01-21 23:59:59">00:00:00</strong> 남았어요
+                </div>
+              </div>
+              <a href="" class="info_area">
+                <p class="name">한끼으뜸쌀 20kg</p>
+                <p class="dc-price">30,000원</p>
+                <p class="price">
+                  <span class="dc-percent">10%</span>
+                  27,000원
+                </p>
+              </a>
+            </div>
+            <div class="swiper-slide cp-item time">
+              <div class="round50 thumb_area">
+                <a href="" class="thumb">
+                  <img src="./src/img/t-product.png" alt="">
+                </a>
+                <div class="timeLimit">
+                  <strong class="timeView" data-deadline="2024-01-21 23:59:59">00:00:00</strong> 남았어요
+                </div>
+              </div>
+              <a href="" class="info_area">
+                <p class="name">한끼으뜸쌀 20kg</p>
+                <p class="dc-price">30,000원</p>
+                <p class="price">
+                  <span class="dc-percent">10%</span>
+                  27,000원
+                </p>
+              </a>
+            </div>
+            <div class="swiper-slide cp-item time">
+              <div class="round50 thumb_area">
+                <a href="" class="thumb">
+                  <img src="./src/img/t-product.png" alt="">
+                </a>
+                <div class="timeLimit">
+                  <strong class="timeView" data-deadline="2024-01-21 23:59:59">00:00:00</strong> 남았어요
+                </div>
+              </div>
+              <a href="" class="info_area">
+                <p class="name">한끼으뜸쌀 20kg</p>
+                <p class="dc-price">30,000원</p>
+                <p class="price">
+                  <span class="dc-percent">10%</span>
+                  27,000원
+                </p>
+              </a>
+            </div>
+            <div class="swiper-slide cp-item time">
+              <div class="round50 thumb_area">
+                <a href="" class="thumb">
+                  <img src="./src/img/t-product.png" alt="">
+                </a>
+                <div class="timeLimit">
+                  <strong class="timeView" data-deadline="2024-01-21 23:59:59">00:00:00</strong> 남았어요
+                </div>
+              </div>
+              <a href="" class="info_area">
+                <p class="name">한끼으뜸쌀 20kg</p>
+                <p class="dc-price">30,000원</p>
+                <p class="price">
+                  <span class="dc-percent">10%</span>
+                  27,000원
+                </p>
+              </a>
+            </div>
+            <div class="swiper-slide cp-item time">
+              <div class="round50 thumb_area">
+                <a href="" class="thumb">
+                  <img src="./src/img/t-product.png" alt="">
+                </a>
+                <div class="timeLimit">
+                  <strong class="timeView" data-deadline="2024-01-21 23:59:59">00:00:00</strong> 남았어요
+                </div>
+              </div>
+              <a href="" class="info_area">
+                <p class="name">한끼으뜸쌀 20kg</p>
+                <p class="dc-price">30,000원</p>
+                <p class="price">
+                  <span class="dc-percent">10%</span>
+                  27,000원
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container bottom_box">
+        <a href="" class="ui-btn round20 moreLong">
+          <span class="text">오늘만 할인제품 전체보기</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="section main_live">
+      <div class="container cp-title">
+        <div class="left">
+          <h3>주인장 LIVE</h3>
+          <p class="tp-expl">좋은 제품을 라이브로 만나보세요!</p>
+        </div>
+      </div>
+      <div class="container left main_live-slide">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <a href="" class="swiper-slide cp-live">
+              <div class="round50 thumb_area">
+                <div href="" class="thumb">
+                  <img src="./src/img/t-live.png" alt="">
+                </div>
+              </div>
+              <div class="info_area">
+                <div class="round60 live-reserv">
+                  <span class="round60 t1">LIVE</span>
+                  <span class="t2">1/20 오후 1:00</span>
+                </div>
+                <div class="live-title">청송사과</div>
+              </div>
+            </a>
+            <a href="" class="swiper-slide cp-live">
+              <div class="round50 thumb_area">
+                <div href="" class="thumb">
+                  <img src="./src/img/t-live.png" alt="">
+                </div>
+              </div>
+              <div class="info_area">
+                <div class="round60 live-reserv">
+                  <span class="round60 t1">LIVE</span>
+                  <span class="t2">1/20 오후 1:00</span>
+                </div>
+                <div class="live-title">청송사과</div>
+              </div>
+            </a>
+            <a href="" class="swiper-slide cp-live">
+              <div class="round50 thumb_area">
+                <div href="" class="thumb">
+                  <img src="./src/img/t-live.png" alt="">
+                </div>
+              </div>
+              <div class="info_area">
+                <div class="round60 live-reserv">
+                  <span class="round60 t1">LIVE</span>
+                  <span class="t2">1/20 오후 1:00</span>
+                </div>
+                <div class="live-title">청송사과</div>
+              </div>
+            </a>
+            <a href="" class="swiper-slide cp-live">
+              <div class="round50 thumb_area">
+                <div href="" class="thumb">
+                  <img src="./src/img/t-live.png" alt="">
+                </div>
+              </div>
+              <div class="info_area">
+                <div class="round60 live-reserv">
+                  <span class="round60 t1">LIVE</span>
+                  <span class="t2">1/20 오후 1:00</span>
+                </div>
+                <div class="live-title">청송사과</div>
+              </div>
+            </a>
+            <a href="" class="swiper-slide cp-live">
+              <div class="round50 thumb_area">
+                <div href="" class="thumb">
+                  <img src="./src/img/t-live.png" alt="">
+                </div>
+              </div>
+              <div class="info_area">
+                <div class="round60 live-reserv">
+                  <span class="round60 t1">LIVE</span>
+                  <span class="t2">1/20 오후 1:00</span>
+                </div>
+                <div class="live-title">청송사과</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="container bottom_box">
+        <a href="" class="ui-btn round20 moreLong">
+          <span class="text">라이브제품 전체보기</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- } contents -->
+
+  <!-- footer { -->
+  <div id="footer">
+    <nav class="container fnb">
+      <a href="" class="btn on">개인정보처리방침</a>
+      <a href="" class="btn">이용약관</a>
+    </nav>
+    <div class="container fbody">
+      <p class="cname">주인장</p>
+      <p class="cinfo">주소 : 대전광역시 oo구 ooo로 oo빌딩<br/>고객센터 : 1234-5678&nbsp;ㅣ&nbsp;이메일 : sumian@sumian.com</p>
+      <p class="copyright">Copyright ⓒ 주인장터. All rights reserved.</p>
+    </div>
+  </div>
+  <!-- } footer -->
+</div>
+
+</body>
+</html>
