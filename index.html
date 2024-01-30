@@ -27,7 +27,7 @@
   <div id="header" class="container main-header">
     <h1 class="logo">
       <a href="">
-        <i>LOGO</i>
+        <img src="./src/img/logo.svg" alt="주인장터 로고">
       </a>
     </h1>
     <div class="util">
@@ -88,6 +88,8 @@
       </div>
     </nav>
   </div>
+
+  <button type="button" class="ui-btn round-per50 btn-moveTop" onclick="$('html,body').animate({scrollTop:0},600);"></button>
   <!-- } header -->
 
   <!-- contents { -->
@@ -108,7 +110,7 @@
             </figure>
           </div>
         </div>
-        <div class="round100 control">
+        <div class="round swiper-control">
           <div class="pagination"></div>
           <button type="button" class="ui-btn playToggle" title="일시정지"></button>
         </div>
@@ -119,55 +121,55 @@
       <div class="cp-quick-category">
         <a href="" class="ui-btn">
           <i class="icon">
-            <img src="./src/img/t-category.png" alt="가공식품">
+            <img src="./src/img/category-a.png" alt="가공식품">
           </i>
           <p class="name">가공식품</p>
         </a>
         <a href="" class="ui-btn">
           <i class="icon">
-            <img src="./src/img/t-category.png" alt="냉장식품">
+            <img src="./src/img/category-b.png" alt="냉장식품">
           </i>
           <p class="name">냉장식품</p>
         </a>
         <a href="" class="ui-btn">
           <i class="icon">
-            <img src="./src/img/t-category.png" alt="조미료/소스">
+            <img src="./src/img/category-c.png" alt="조미료/소스">
           </i>
           <p class="name">조미료/소스</p>
         </a>
         <a href="" class="ui-btn">
           <i class="icon">
-            <img src="./src/img/t-category.png" alt="김치/반찬">
+            <img src="./src/img/category-d.png" alt="김치/반찬">
           </i>
           <p class="name">김치/반찬</p>
         </a>
         <a href="" class="ui-btn">
           <i class="icon">
-            <img src="./src/img/t-category.png" alt="생수/음료">
+            <img src="./src/img/category-e.png" alt="생수/음료">
           </i>
           <p class="name">생수/음료</p>
         </a>
         <a href="" class="ui-btn">
           <i class="icon">
-            <img src="./src/img/t-category.png" alt="쌀/잡곡">
+            <img src="./src/img/category-f.png" alt="쌀/잡곡">
           </i>
           <p class="name">쌀/잡곡</p>
         </a>
         <a href="" class="ui-btn">
           <i class="icon">
-            <img src="./src/img/t-category.png" alt="과일/채소">
+            <img src="./src/img/category-g.png" alt="과일/채소">
           </i>
           <p class="name">과일/채소</p>
         </a>
         <a href="" class="ui-btn">
           <i class="icon">
-            <img src="./src/img/t-category.png" alt="정육/계란">
+            <img src="./src/img/category-h.png" alt="정육/계란">
           </i>
           <p class="name">정육/계란</p>
         </a>
         <a href="" class="ui-btn">
           <i class="icon">
-            <img src="./src/img/t-category.png" alt="수산/건어물">
+            <img src="./src/img/category-i.png" alt="수산/건어물">
           </i>
           <p class="name">수산/건어물</p>
         </a>
@@ -181,8 +183,10 @@
     <div class="section main_best">
       <div class="container cp-title">
         <div class="left">
-          <h3>베스트</h3>
-          <p class="tp-expl">주인장에서 제일 잘 나가요!</p>
+          <div class="text-box">
+            <h3>베스트<img src="./src/img/icon_crown.svg" alt="" class="icon"></h3>
+            <p class="tp-expl">주인장에서 제일 잘 나가요!</p>
+          </div>
         </div>
         <div class="right">
           <a href="" class="ui-btn more">전체보기</a>
@@ -304,8 +308,10 @@
     <div class="section main_recomm">
       <div class="container cp-title">
         <div class="left">
-          <h3>추천상품</h3>
-          <p class="tp-expl">주인장에서 추천하는 상품이에요!</p>
+          <div class="text-box">
+            <h3>추천상품<img src="./src/img/icon_recomm.svg" alt="" class="icon"></h3>
+            <p class="tp-expl">주인장에서 추천하는 상품이에요!</p>
+          </div>
         </div>
         <div class="right">
           <a href="" class="ui-btn more">전체보기</a>
@@ -422,8 +428,10 @@
     <div class="section main_new">
       <div class="container cp-title">
         <div class="left">
-          <h3>신상품</h3>
-          <p class="tp-expl">새로나온 신상품을 만나보세요!</p>
+          <div class="text-box">
+            <h3>인기상품<img src="./src/img/icon_new.svg" alt="" class="icon"></h3>
+            <p class="tp-expl">새로나온 신상품을 만나보세요!</p>
+          </div>
         </div>
         <div class="right">
           <a href="" class="ui-btn more">전체보기</a>
@@ -540,8 +548,13 @@
     <div class="section main_today">
       <div class="container cp-title">
         <div class="left">
-          <h3>오늘만</h3>
-          <p class="tp-expl">지금 놓치면 끝! 오늘만 특가할인!</p>
+          <div class="icon-box">
+            <img src="./src/img/icon_bell.svg" alt="오늘만 특가할인">
+          </div>
+          <div class="text-box">
+            <h3>오늘만 <span class="highlight">특가할인!</span></h3>
+            <p class="tp-expl">지금 놓치면 끝! 오늘만 특가할인!</p>
+          </div>
         </div>
       </div>
       <div class="container left main_today-slide">
@@ -638,11 +651,16 @@
               </a>
             </div>
           </div>
+          <div class="swiper-control2">
+            <button type="button" class="arrow prev"></button>
+            <div class="pagination"></div>
+            <button type="button" class="arrow next"></button>
+          </div>
         </div>
       </div>
       <div class="container bottom_box">
-        <a href="" class="ui-btn round20 moreLong">
-          <span class="text">오늘만 할인제품 전체보기</span>
+        <a href="" class="ui-btn round moreLong">
+          <span class="text">오늘만 특가할인 전체보기</span>
         </a>
       </div>
     </div>
@@ -650,8 +668,13 @@
     <div class="section main_live">
       <div class="container cp-title">
         <div class="left">
-          <h3>주인장 LIVE</h3>
-          <p class="tp-expl">좋은 제품을 라이브로 만나보세요!</p>
+          <div class="icon-box">
+            <img src="./src/img/icon_liveon.svg" alt="Live ON">
+          </div>
+          <div class="text-box">
+            <h3>주인장 <span class="highlight">LIVE</span></h3>
+            <p class="tp-expl">좋은 제품을 라이브로 만나보세요!</p>
+          </div>
         </div>
       </div>
       <div class="container left main_live-slide">
@@ -728,10 +751,15 @@
               </div>
             </a>
           </div>
+          <div class="swiper-control2">
+            <button type="button" class="arrow prev"></button>
+            <div class="pagination"></div>
+            <button type="button" class="arrow next"></button>
+          </div>
         </div>
       </div>
       <div class="container bottom_box">
-        <a href="" class="ui-btn round20 moreLong">
+        <a href="" class="ui-btn round moreLong">
           <span class="text">라이브제품 전체보기</span>
         </a>
       </div>
