@@ -75,7 +75,18 @@ $(document).ready(function () {
   const mainTodayTarget = '.main_today-slide .swiper-container';
   const mainTodayOptions = {
     slidesPerView: "auto",
-    freeMode: true
+    freeMode: true,
+    navigation: {
+      nextEl: `${mainTodayTarget} .next`,
+      prevEl: `${mainTodayTarget} .prev`,
+    },
+    pagination: {
+      el: `${mainTodayTarget} .pagination`,
+      type: 'custom',
+      renderCustom: function (swiper, current, total) {
+          return `<span class="current">${current}</span><span class="bar">&#124;</span><span class="total">${total}</span>`;
+      }
+    },
   };
   const mainTodaySlider = f.slider(mainTodayTarget, mainTodayOptions);
 
@@ -85,7 +96,30 @@ $(document).ready(function () {
   const mainLiveTarget = '.main_live-slide .swiper-container';
   const mainLiveOptions = {
     slidesPerView: "auto",
-    freeMode: true
+    freeMode: true,
+    navigation: {
+      nextEl: `${mainLiveTarget} .next`,
+      prevEl: `${mainLiveTarget} .prev`,
+    },
+    pagination: {
+      el: `${mainLiveTarget} .pagination`,
+      type: 'custom',
+      renderCustom: function (swiper, current, total) {
+          return `<span class="current">${current}</span><span class="bar">&#124;</span><span class="total">${total}</span>`;
+      }
+    },
   };
   const mainLiveSlider = f.slider(mainLiveTarget, mainLiveOptions);
+
+  $(window).scroll(function () {
+    let scrHeight = $(document).scrollTop();
+
+    // Top Button
+    if(scrHeight > 500) {
+      $('.btn-moveTop').css('display','block');
+    } else {
+      $('.btn-moveTop').css('display','none');
+    }
+  }); //End window scroll
 }); //End document
+
