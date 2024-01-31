@@ -24,15 +24,18 @@
 
 <div id="document">
   <!-- header { -->
-  <div id="header" class="container main-header">
+  <div id="header" class="container default">
     <h1 class="logo">
       <a href="">
-        <img src="./src/img/logo.svg" alt="주인장터 로고">
+        <img src="./src/img/logo-white.svg" alt="주인장터 로고">
       </a>
     </h1>
-    <div class="util">
+    <div class="container util">
+      <button type="button" class="ui-btn gnb-btn">
+        <span class="bar"></span>
+      </button>
       <div class="search">
-        <input type="text" class="w-per100 round100 keyword">
+        <input type="text" class="w-per100 round100 keyword" placeholder="사장님이 왕이되는 식자재 장터">
         <button type="submit" class="ui-btn submit" title="검색하기"></button>
       </div>
       <ul class="gbtn_wrap">
@@ -40,7 +43,7 @@
           <a href="" class="gbtn cart"></a>
         </li>
         <li>
-          <a href="" class="gbtn alarm"></a>
+          <a href="" class="gbtn alarm on"></a>
         </li>
       </ul>
     </div>
@@ -70,9 +73,6 @@
   </nav>
 
   <div id="topMenu" class="container left">
-    <button type="button" class="ui-btn st1 round20 gnb-btn">
-      <span class="bar"></span>
-    </button>
     <nav class="cp-horizon-menu qk-menu">
       <div class="swiper-wrapper">
         <a href="" data-id="home" class="swiper-slide btn">홈</a>
