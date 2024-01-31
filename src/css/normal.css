@@ -47,19 +47,20 @@
 
 .main_category {margin-top: 4.4rem;}
 
-.main_best .cp-title .text-box .icon {width: 4.24rem;}
+.main_best .cp-title .icon-box:after {width: 2.16rem; height: 3.4rem; background-image: url('../img/icon-best.svg');}
 .main_best-slide {}
 .main_best-slide .cp-item {width: 32rem; margin-right: 2rem;}
 
-.main_recomm .cp-title .text-box .icon {width: 4.4rem;}
+.main_recomm .cp-title .icon-box:after {width: 2.92rem; height: 3.6rem; background-image: url('../img/icon-recomm.svg');}
 .main_recomm-slide .cp-item {width: 22rem; margin-right: 2rem;}
 
-.main_new .cp-title .text-box .icon {width: 3.76rem;}
-.main_new-slide .cp-item {width: 22rem; margin-right: 2rem;}
+.main_popular .cp-title .icon-box:after {width: 2.88rem; height: 2.6rem; background-image: url('../img/icon-heart.svg');}
+.main_popular-slide .cp-item {width: 22rem; margin-right: 2rem;}
 
-.main_today .cp-title .icon-box {width: 6.4rem;}
+.main_today .cp-title .icon-box:after {width: 3.48rem; height: 3.12rem; background-image: url('../img/icon-time.svg');}
 .main_today-slide .cp-item {width: 44rem; margin-right: 2.4rem;}
 .main_today-slide .cp-item .thumb_area {padding-bottom: 82%;}
 
-.main_live .cp-title .icon-box {width: 11rem;}
+.main_live .cp-title .icon-box {width: 11.08rem; height: auto; background: none;}
+.main_live .cp-title .icon-box:after {display: none;}
 .main_live-slide .cp-live {width: 44rem; margin-right: 2.4rem;}
