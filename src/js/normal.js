@@ -63,8 +63,8 @@ $(document).ready(function () {
   };
   const mainRecommSlider = f.slider(mainRecommTarget, mainRecommOptions);
 
-  //Main New Slide
-  const mainNewTarget = '.main_new-slide .swiper-container';
+  //Main Popular Slide
+  const mainNewTarget = '.main_popular-slide .swiper-container';
   const mainNewOptions = {
     slidesPerView: "auto",
     freeMode: true
