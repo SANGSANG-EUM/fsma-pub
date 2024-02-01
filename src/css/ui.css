@@ -294,3 +294,11 @@ a.ui-btn.sizeS {line-height: 3.5rem;}
 .info-item {display: flex; align-items: flex-start;}
 .info-item .tit {font-weight: 500; font-size: 2.16rem; color: var(--color-black3); width: 12.68rem; line-height: 1.666;}
 .info-item .cont {font-weight: 300; font-size: 2.16rem; color: var(--color-gray2); line-height: 1.666; width: calc(100% - 12.68rem);}
+
+/* popup */
+.pop-imsi {position: relative; height: 100vh;}
+.popup {position: absolute; top: 0; left: 0; right: 0; bottom: 0;}
+.pop-bg {background-color: rgba(0,0,0,0.5); z-index: 50;}
+.pop-inner {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); z-index: 51; background-color: #fff; width: 90%; overflow-y: auto; max-height: 90%; border-radius: 5rem; padding: 3rem;}
+.pop-inner .pop-top {display: flex; justify-content: flex-end;}
+.pop-inner .pop-top {}
