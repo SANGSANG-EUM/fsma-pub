@@ -7,12 +7,6 @@ export const slider = function(t, opt) {
     const swiper = new Swiper(t, options);
     const el = document.querySelector(t);
 
-    
-
-  // if($('div[a="ceventbanner_list01"]').children('div').length == 0 ) {
-    // $('div[a="ceventbanner_list01_p"]').css('display','none');
-  // }
-
     return {
       el: el,
       swiper: swiper
@@ -53,7 +47,7 @@ export const hrizonMenu = function(t, a) {
 }
 
 /**
- * 
+ * 타이머 남은 시간계산
  * @param {string} deadline // d-day (yyyy-mm-dd hh:mm:ss)
  * @returns {string} d-day까지 남은 시간 (n일 시:분:초)
  */
