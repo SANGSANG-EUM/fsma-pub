@@ -90,7 +90,8 @@ $(document).ready(function () {
   };
   const mainTodaySlider = f.slider(mainTodayTarget, mainTodayOptions);
 
-  f.timeSale('.main_today .timeView');
+  //Main Time Sale
+  f.timeSale('.main_today .cp-timer__num');
 
   //Main Live Slide
   const mainLiveTarget = '.main_live-slide .swiper-container';

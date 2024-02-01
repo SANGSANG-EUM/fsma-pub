@@ -26,9 +26,10 @@
     body {background-color: #f9f9f9;}
     #document > .container {padding-top: 6.25rem; padding-bottom: 6.25rem;}
     .section {padding: 3.125rem 0;}
-    .section h3 {margin-bottom: 4rem;}
+    .section > h3 {margin-bottom: 4rem;}
     .sb_section {margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #000;}
-    .sb_section h5 {margin-bottom: 2rem;}
+    .sb_section.bg2 {background-color: #cccccc;}
+    .sb_section > h5 {margin-bottom: 2rem;}
     .ui_con {margin-top: 10px;}
 
     .page-title {color: var(--color-main);}
@@ -90,6 +91,7 @@
             <button type="button" class="ui-btn stBlack sizeM">Button</button>
             <button type="button" class="ui-btn stWhite sizeM">Button</button>
             <button type="button" class="ui-btn st1 sizeM">Button</button>
+            <button type="button" class="ui-btn st2 sizeM">Button</button>
           </li>
         </ul>
       </div>
@@ -136,6 +138,17 @@
             <a href="" class="ui-btn round20 moreLong">
               <span class="text">오늘만 할인상품 전체보기</span>
             </a>
+          </li>
+        </ul>
+      </div>
+      <div class="sb_section">
+        <h5>-- Tag</h5>
+        <ul class="ui_con">
+          <li class="flex gap">
+            <span class="tag coupon">쿠폰</span>
+            <span class="tag freeDelivery">무료배송</span>
+            <span class="tag on">진행/완료</span>
+            <span class="tag off">종료/대기</span>
           </li>
         </ul>
       </div>
@@ -504,9 +517,31 @@
 
       <div class="sb_section">
         <h5>-- 배너(라운드형)</h5>
-        <div class="round-banner">
+        <div class="cp-banner__round">
           <img src="./src/img/t-main-visual_1.jpg" alt="" class="fitCover">
         </div>
+      </div>
+
+      <div class="sb_section bg2">
+        <h5>-- 타이머(yyyy-MM-dd HH:mm:ss)</h5>
+        <ul class="ui_con flex">
+          <li class="flex gap">
+            <div class="cp-timer">
+              <div class="cp-timer-wrap">
+                <i class="cp-timer__icon"></i>
+                <span class="cp-timer__num" data-deadline="2024-02-01 23:59:59">00:00:00</span>
+                <span class="cp-timer__text">남음</span>
+              </div>
+            </div>
+            <div class="cp-timer">
+              <div class="cp-timer-wrap white">
+                <i class="cp-timer__icon"></i>
+                <span class="cp-timer__num">00:00:00</span>
+                <span class="cp-timer__text">남음</span>
+              </div>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
 
@@ -524,7 +559,8 @@ let horizonMenu2Target = '.cp-horizon-menu2';
 let horizonMenu2Active = 'all';
 let horizonMenu2 = f.hrizonMenu(horizonMenu2Target, horizonMenu2Active);
 
-f.timeSale('.timeView');
+// f.timeSale('.timeView');
+f.timeSale('.cp-timer__num');
 </script>
 
 
