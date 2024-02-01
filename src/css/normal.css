@@ -41,7 +41,7 @@
 
 .main_today .cp-title .icon-box:after {width: 3.48rem; height: 3.12rem; background-image: url('../img/icon-time.svg');}
 .main_today-slide .cp-item {width: 44rem; margin-right: 2.4rem;}
-.main_today-slide .cp-item .thumb_area {padding-bottom: 82%;}
+.main_today-slide .cp-item .prod-thumb_area {padding-bottom: 82%;}
 
 .main_live .cp-title .icon-box {width: 11.08rem; height: auto; background: none;}
 .main_live .cp-title .icon-box:after {display: none;}
