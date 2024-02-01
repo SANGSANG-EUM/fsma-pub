@@ -23,7 +23,8 @@ export const slider = function(t, opt) {
 export const hrizonMenu = function(t, a) {
   if(document.querySelectorAll(t).length > 0){
     const options = {
-      slidesPerView: "auto"
+      slidesPerView: "auto",
+      freeMode: true
     }
     const swiper = new Swiper(t, options);
     const el = document.querySelector(t);
