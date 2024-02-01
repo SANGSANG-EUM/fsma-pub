@@ -58,3 +58,18 @@
 .prod-dp__title h3 {font-size: 3.6rem; font-weight: 600; color: var(--color-black2);}
 .prod-dp-ct {display: flex; flex-flow: row wrap; align-items: flex-start; justify-content: flex-start; gap: 4.8rem 2.4rem; margin-top: 3.44rem;}
 .prod-dp-ct .cp-item {width: calc(100% / 2 - 2.4rem);}
+
+/* > detail */
+.prodDetail {margin-top: 0 !important;}
+
+.prod-detailThumb .swiper-control {width: auto; padding: 0 2rem;}
+.prod-detailThumb .swiper-control .pagination {margin-left: 0;}
+
+.prod-detailInfo {margin-top: 2rem;}
+.prod-detailInfo__head {position: relative;}
+.prod-detailInfo__head .prod-tag_area {margin-bottom: 2.6rem;}
+.prod-detailInfo__head .prod-info_area .name {}
+.prod-detailInfo__head .prod-info_area .dc-price {font-size: 2.4rem;}
+.prod-detailInfo__head .prod-info_area .dc-percent {font-size: 3.2rem;}
+.prod-detailInfo__head .prod-info_area .price {font-size: 3.2rem;}
+.prod-detailInfo__head .share-btn {position: absolute; top: 0; right: 0; z-index: 10; width: 3.6rem; height: 3.6rem; background: url('../img/share.svg') no-repeat center/contain;}
