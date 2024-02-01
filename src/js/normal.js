@@ -145,6 +145,23 @@ $(document).ready(function () {
   const prodCateTarget = '.prod-list__category .category-wrap';
   const prodCate = f.hrizonMenu(prodCateTarget, prodCateActive);
 
+  //Product Detail Thumb Slide
+  const prodDetailThumbTarget = '.prod-detailThumb .swiper-container';
+  const prodDetailThumbOptions = {
+    slidesPerView: 1,
+    loop: true,
+    // autoplay: {
+    //   delay: 3000,
+    // },
+    speed: 1000,
+    centeredSlides: true,
+    pagination: {
+      el: `${prodDetailThumbTarget} .pagination`,
+      type: 'fraction',
+    },
+  };
+  const prodDetailThumbSlider = f.slider(prodDetailThumbTarget, prodDetailThumbOptions);
+
   $(window).scroll(function () {
     let scrHeight = $(document).scrollTop();
 
