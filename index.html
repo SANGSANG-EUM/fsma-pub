@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="./src/css/normal.css">
   <link rel="stylesheet" href="./src/css/responsive.css">
 
-  <script src="./src/js/jquery-3.7.0.min.js" defer></script>
+  <script src="./src/js/jquery-3.7.0.min.js" ></script>
   <script src="./src/plugin/feather.min.js" defer></script>
   <script src="./src/plugin/prefixfree.min.js" defer></script>
   <script src="./src/plugin/matchheight/jquery.matchHeight.js" defer></script>
@@ -22,75 +22,20 @@
   <script src="./src/js/normal.js" type="module" defer></script>
 <body>
 
+
+
 <div id="document">
   <!-- header { -->
-  <div id="header" class="container default">
-    <h1 class="logo">
-      <a href="">
-        <img src="./src/img/logo-white.svg" alt="주인장터 로고">
-      </a>
-    </h1>
-    <div class="container util">
-      <button type="button" class="ui-btn gnb-btn">
-        <span class="bar"></span>
-      </button>
-      <div class="search">
-        <input type="text" class="w-per100 round100 keyword" placeholder="사장님이 왕이되는 식자재 장터">
-        <button type="submit" class="ui-btn submit" title="검색하기"></button>
-      </div>
-      <ul class="gbtn_wrap">
-        <li>
-          <a href="" class="gbtn cart-btn"></a>
-        </li>
-        <li>
-          <a href="" class="gbtn alarm-btn on"></a>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <nav href="" id="cp-dockbar">
-    <a href="" id="dockbar-shop" class="btn on">
-      <span class="icon"></span>
-      <p class="text">장보기</p>
-    </a>
-    <a href="" id="dockbar-member" class="btn">
-      <span class="icon"></span>
-      <p class="text">회원사현황</p>
-    </a>
-    <a href="" id="dockbar-home" class="btn">
-      <span class="icon"></span>
-      <p class="text">홈</p>
-    </a>
-    <a href="" id="dockbar-market" class="btn">
-      <span class="icon"></span>
-      <p class="text">중고장터</p>
-    </a>
-    <a href="" id="dockbar-affiliate" class="btn">
-      <span class="icon"></span>
-      <p class="text">제휴서비스</p>
-    </a>
-  </nav>
-
-  <div id="topMenu" class="container left">
-    <nav class="cp-horizon-menu qk-menu">
-      <div class="swiper-wrapper">
-        <a href="" data-id="home" class="swiper-slide btn">홈</a>
-        <a href="" data-id="best" class="swiper-slide btn">베스트</a>
-        <a href="" data-id="new" class="swiper-slide btn">신상품</a>
-        <a href="" data-id="today" class="swiper-slide btn">오늘만</a>
-        <a href="" data-id="live" class="swiper-slide btn">라이브</a>
-        <a href="" data-id="exhibition" class="swiper-slide btn">기획전</a>
-        <a href="" data-id="raffle" class="swiper-slide btn">래플응모</a>
-        <a href="" data-id="memberHall" class="swiper-slide btn">전용관</a>
-        <a href="" data-id="regularDelivery" class="swiper-slide btn">정기배송</a>
-        <a href="" data-id="customerService" class="swiper-slide btn">고객센터</a>
-      </div>
-    </nav>
-  </div>
-
-  <button type="button" class="ui-btn round-per50 btn-moveTop" onclick="$('html,body').animate({scrollTop:0},600);"></button>
+  <div id="imsi-header"></div>
   <!-- } header -->
+
+  <!-- dockbar { -->
+  <div id="imsi-dockBar"></div>
+  <!-- } dockbar -->
+
+  <!-- topMenu { -->
+  <div id="imsi-topMenu"></div>
+  <!-- } topMenu -->
 
   <!-- contents { -->
   <div id="contents" class="main-contents">
@@ -119,61 +64,61 @@
 
     <div class="container section main_category">
       <div class="cp-quick-category">
-        <a href="" class="ui-btn">
+        <a href="./sub/product-list.html" class="ui-btn">
           <i class="icon">
             <img src="./src/img/category-a.png" alt="가공식품">
           </i>
           <p class="name">가공식품</p>
         </a>
-        <a href="" class="ui-btn">
+        <a href="./sub/product-list.html" class="ui-btn">
           <i class="icon">
             <img src="./src/img/category-b.png" alt="냉장식품">
           </i>
           <p class="name">냉장식품</p>
         </a>
-        <a href="" class="ui-btn">
+        <a href="./sub/product-list.html" class="ui-btn">
           <i class="icon">
             <img src="./src/img/category-c.png" alt="조미료/소스">
           </i>
           <p class="name">조미료/소스</p>
         </a>
-        <a href="" class="ui-btn">
+        <a href="./sub/product-list.html" class="ui-btn">
           <i class="icon">
             <img src="./src/img/category-d.png" alt="김치/반찬">
           </i>
           <p class="name">김치/반찬</p>
         </a>
-        <a href="" class="ui-btn">
+        <a href="./sub/product-list.html" class="ui-btn">
           <i class="icon">
             <img src="./src/img/category-e.png" alt="생수/음료">
           </i>
           <p class="name">생수/음료</p>
         </a>
-        <a href="" class="ui-btn">
+        <a href="./sub/product-list.html" class="ui-btn">
           <i class="icon">
             <img src="./src/img/category-f.png" alt="쌀/잡곡">
           </i>
           <p class="name">쌀/잡곡</p>
         </a>
-        <a href="" class="ui-btn">
+        <a href="./sub/product-list.html" class="ui-btn">
           <i class="icon">
             <img src="./src/img/category-g.png" alt="과일/채소">
           </i>
           <p class="name">과일/채소</p>
         </a>
-        <a href="" class="ui-btn">
+        <a href="./sub/product-list.html" class="ui-btn">
           <i class="icon">
             <img src="./src/img/category-h.png" alt="정육/계란">
           </i>
           <p class="name">정육/계란</p>
         </a>
-        <a href="" class="ui-btn">
+        <a href="./sub/product-list.html" class="ui-btn">
           <i class="icon">
             <img src="./src/img/category-i.png" alt="수산/건어물">
           </i>
           <p class="name">수산/건어물</p>
         </a>
-        <a href="" class="ui-btn viewAll">
+        <a href="./sub/product-list.html" class="ui-btn viewAll">
           <i class="icon"></i>
           <p class="name">전체보기</p>
         </a>
@@ -787,19 +732,19 @@
   <!-- } contents -->
 
   <!-- footer { -->
-  <div id="footer">
-    <nav class="container fnb">
-      <a href="" class="btn on">개인정보처리방침</a>
-      <a href="" class="btn">이용약관</a>
-    </nav>
-    <div class="container fbody">
-      <p class="cname">주인장</p>
-      <p class="cinfo">주소 : 대전광역시 oo구 ooo로 oo빌딩<br/>고객센터 : 1234-5678&nbsp;ㅣ&nbsp;이메일 : sumian@sumian.com</p>
-      <p class="copyright">Copyright ⓒ 주인장터. All rights reserved.</p>
-    </div>
-  </div>
+  <div id="imsi-footer"></div>
   <!-- } footer -->
 </div>
+
+<!-- header, footer 임시 인클루드 -->
+<script>
+  $(document).ready(function () {
+    $('#imsi-header').load("./include/header.html");
+    $('#imsi-footer').load("./include/footer.html");
+    $('#imsi-dockBar').load("./include/dockBar.html");
+    $('#imsi-topMenu').load("./include/topMenu.html");
+  });
+  </script>
 
 </body>
 </html>

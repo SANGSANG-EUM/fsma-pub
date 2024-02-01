@@ -112,6 +112,39 @@ $(document).ready(function () {
   };
   const mainLiveSlider = f.slider(mainLiveTarget, mainLiveOptions);
 
+  //Product List Top Banner Slide
+  const prodTopBannerTarget = '.prod-topBanner .swiper-container';
+  const prodTopBannerOptions = {
+    slidesPerView: 1,
+    loop: true,
+    // autoplay: {
+    //   delay: 3000,
+    // },
+    speed: 1000,
+    centeredSlides: true,
+    pagination: {
+      el: `${prodTopBannerTarget} .pagination`,
+      type: 'fraction',
+    },
+  };
+  const prodTopBannerSlider = f.slider(prodTopBannerTarget, prodTopBannerOptions);
+  const prodTopBannerPlayBtn = prodTopBannerSlider?.el.querySelector('.playToggle');
+
+  prodTopBannerPlayBtn?.addEventListener("click", function(e) {
+    if(prodTopBannerPlayBtn.classList.contains('stop')) {
+      prodTopBannerSlider.swiper.autoplay.start();
+      prodTopBannerPlayBtn.classList.remove('stop');
+    } else {
+      prodTopBannerSlider.swiper.autoplay.stop();
+      prodTopBannerPlayBtn.classList.add('stop');
+    }
+  });
+
+  //Product List Category
+  let prodCateActive = '';
+  const prodCateTarget = '.prod-list__category .category-wrap';
+  const prodCate = f.hrizonMenu(prodCateTarget, prodCateActive);
+
   $(window).scroll(function () {
     let scrHeight = $(document).scrollTop();
 

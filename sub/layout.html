@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>주인장</title>
+
+  <!-- src > css, js 연결 -->
+  <link rel="stylesheet" href="../src/plugin/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../src/css/fonts.css">
+  <link rel="stylesheet" href="../src/css/common.css">
+  <link rel="stylesheet" href="../src/css/ui.css">
+  <link rel="stylesheet" href="../src/css/normal.css">
+  <link rel="stylesheet" href="../src/css/responsive.css">
+
+  <script src="../src/js/jquery-3.7.0.min.js"></script>
+  <script src="../src/plugin/feather.min.js" defer></script>
+  <script src="../src/plugin/prefixfree.min.js" defer></script>
+  <script src="../src/plugin/matchheight/jquery.matchHeight.js" defer></script>
+  <script src="../src/plugin/swiper/swiper-bundle.min.js" defer></script>
+  <script src="../src/js/common.js" defer></script>
+  <script src="../src/js/normal.js" type="module" defer></script>
+</head>
+<body>
+<div id="document">
+  <!-- header { -->
+  <div id="imsi-header"></div>
+  <!-- } header -->
+
+  <!-- dockbar { -->
+  <div id="imsi-dockBar"></div>
+  <!-- } dockbar -->
+
+  <!-- topMenu { -->
+  <div id="imsi-topMenu"></div>
+  <!-- } topMenu -->
+  
+  <!-- contents { -->
+  <div id="contents" class="sub-contents">
+
+  </div>
+  <!-- contents { -->
+
+  <!-- footer { -->
+  <div id="imsi-footer"></div>
+  <!-- } footer -->
+</div>
+
+<!-- header, footer 임시 인클루드 -->
+<script>
+$(document).ready(function () {
+  $('#imsi-header').load("./include/header.html");
+  $('#imsi-footer').load("./include/footer.html");
+  $('#imsi-dockBar').load("./include/dockBar.html");
+  $('#imsi-topMenu').load("./include/topMenu.html");
+});
+</script>
+
+</body>
+</html>

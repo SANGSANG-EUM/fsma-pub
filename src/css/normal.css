@@ -46,3 +46,15 @@
 .main_live .cp-title .icon-box {width: 11.08rem; height: auto; background: none;}
 .main_live .cp-title .icon-box:after {display: none;}
 .main_live-slide .cp-live {width: 44rem; margin-right: 2.4rem;}
+
+/* product */
+/* > list */
+.prod-topBanner {margin-top: 0;}
+.prod-topBanner .item {height: 0; padding-bottom: 52.9%;}
+
+.prod-list__category {margin-top: 2rem;}
+
+.prod-dp {margin-top: 4.4rem;}
+.prod-dp__title {font-size: 3.6rem; font-weight: 600; color: var(--color-black2);}
+.prod-dp-ct {display: flex; flex-flow: row wrap; align-items: flex-start; justify-content: flex-start; gap: 4.8rem 2.4rem; margin-top: 3.44rem;}
+.prod-dp-ct .cp-item {width: calc(100% / 2 - 2.4rem);}

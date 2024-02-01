@@ -35,7 +35,7 @@ input[type="submit"], button{cursor:pointer}
 input{border-radius: 0;}
 
 /* layout guide */
-#document {overflow: hidden; width: var(--max-width); max-width: 100%; margin: 0 auto; padding-bottom: 9.2rem; box-shadow: 0 0 5px 1px rgba(0,0,0,0.1);}
+#document {overflow: hidden; width: var(--max-width); max-width: 100%; min-height: 100vh; margin: 0 auto; padding-bottom: 9.2rem; box-shadow: 0 0 5px 1px rgba(0,0,0,0.1);}
 #contents {margin-top: 2rem; padding-bottom: 7rem;}
 
 .container {padding-left: 2.4rem; padding-right: 2.4rem; width: 100%;}
