@@ -68,7 +68,7 @@
 .prod-detailInfo {margin-top: 2rem;}
 .prod-detailInfo__head {position: relative;}
 .prod-detailInfo__head .prod-tag_area {margin-bottom: 2.6rem;}
-.prod-detailInfo__head .prod-info_area .name {}
+.prod-detailInfo__head .prod-info_area .name {margin-bottom: 1.4rem;}
 .prod-detailInfo__head .prod-info_area .dc-price {font-size: 2.4rem;}
 .prod-detailInfo__head .prod-info_area .dc-percent {font-size: 3.2rem;}
 .prod-detailInfo__head .prod-info_area .price {font-size: 3.2rem;}
