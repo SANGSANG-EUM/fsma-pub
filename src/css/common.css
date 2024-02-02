@@ -5,18 +5,19 @@
   --error-color: #f00;
   --success-color: #2970ff;
 
-  --color-main: #fa6918;
-  --color-white: #ffffff;
+  --color-main: #FA6918;
+  --color-white: #FFFFFF;
   --color-black: #000000;
-  --color-black2: #0f0f0f;
+  --color-black2: #0F0F0F;
   --color-black3: #333333;
-  --color-gray: #f9f9f9;
-  --color-gray2: #666;
-  --color-gray3: #999;
-  --color-gray4: #eee;
-  --color-gray5: #ddd;
-  --color-gray6: #dedede;
-  --color-gray7: #bbb;
+  --color-gray: #F9F9F9;
+  --color-gray2: #666666;
+  --color-gray3: #999999;
+  --color-gray4: #EEEEEE;
+  --color-gray5: #DDDDDD;
+  --color-gray6: #DEDEDE;
+  --color-gray7: #BBBBBB;
+  --color-gray8: #FAFAFA;
 }
 
 /* Reset */
