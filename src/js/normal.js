@@ -170,6 +170,28 @@ $(document).ready(function () {
   };
   const prodDetailRelSlider = f.slider(prodDetailRelTarget, prodDetailRelOptions);
 
+  //Product Discount Rate
+  const prodDcEl = $(".prod-info_area");
+
+  prodDcEl.each(function() {
+    /* 할인율 랜더링 함수 다시!
+    const prodSupPrice = parseFloat($(this).find('.dc-price').text().replace(/[^0-9]/g, ''));
+    
+    const prodSalePrice = parseFloat($(this).find('.price').text().replace(/[^0-9]/g, ''));
+
+    // 가격 데이터 추출
+    const priceText = $(this).find('.price').contents().filter(function() {
+        return this.nodeType === 3;
+    }).text();
+
+    // 콤마 제거 후 숫자만 추출
+    const priceNumber = parseFloat(priceText.replace(/[^0-9]/g, ''));
+    const prodDcPerEl = $(this).find('.dc-percent');
+
+    console.log(prodSupPrice, priceNumber);
+    */
+  });
+
   //Scroll Event
   $(window).scroll(function () {
     let scrHeight = $(document).scrollTop();
