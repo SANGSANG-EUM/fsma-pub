@@ -313,24 +313,28 @@ a.ui-btn.sizeS {line-height: 3.5rem;}
 .cp-cart .cp-cart-item ~ .cp-cart-item {margin-top: 2rem; border-top: 0.16rem solid #E9E9E9;}
 .cp-cart .cp-cart-head {display: flex; align-items: center; justify-content: space-between; margin-bottom: 2.16rem;}
 .cp-cart .title {display: flex; align-items: center;}
+.cp-cart .frm-choice {margin-right: 1.28rem;}
 .cp-cart .frm-choice input[type='checkbox'] + label:before {width: 2.8rem; height: 2.8rem; border-radius: 0.4rem;}
-.cp-cart .name {padding-left: 1.28rem; font-size: 2.16rem; font-weight: 500; color: var(--color-black2);}
+.cp-cart .name {font-size: 2.16rem; font-weight: 500; color: var(--color-black2);}
 .cp-cart .delete {width: 2rem; height: 2rem; background: url('../img/icon-close.svg') no-repeat center center/cover; font-size: 0;}
 .cp-cart .cp-cart-body {padding-left: 4.4rem; font-size: 0;}
 .cp-cart .thumb {display: inline-block; vertical-align: top; width: 14rem; height: 14rem; padding: 0; border: 1px solid var(--color-gray5); overflow: hidden;}
 .cp-cart .thumb img {}
 .cp-cart .content {display: inline-block; vertical-align: top; width: calc(100% - 14rem); padding-left: 2.32rem;}
-.cp-cart .count {display: flex; align-items: center; gap: 1.28rem; margin-bottom: 2.52rem;}
+.cp-cart .count {display: flex; align-items: center; gap: 1.28rem;}
 .cp-cart .box {display: flex; align-items: center;}
 .cp-cart .count .box .ui-btn {width: 5.2rem; height: 5.2rem; padding: 0; color: var(--color-gray2);}
 .cp-cart .count .box .ui-btn.minus {border-radius: 0.8rem 0 0 0.8rem;}
 .cp-cart .count .box .ui-btn.plus {border-radius: 0 0.8rem 0.8rem 0;}
 .cp-cart input {width: 5.2rem; height: 5.2rem; border: 1px solid var(--color-gray5); font-size: 2.16rem; font-weight: 500; color: var(--color-black3); text-align: center;}
 .cp-cart .ui-btn.change {height: 5.2rem;}
-.cp-cart .info {}
-.cp-cart .set {margin-bottom: 2.64rem;}
+.cp-cart .info {margin-top: 2.52rem;}
+.cp-cart .set {}
 .cp-cart .set p {position: relative; display: inline-block; vertical-align: middle; font-size: 2.16rem; font-weight: 500; color: var(--color-black3);}
 .cp-cart .set p:not(:last-child) {padding-right: 3.2rem;}
 .cp-cart .set p:not(:last-child)::after {position: absolute; right: 1.6rem; top: 50%; width: 0.04rem; height: 2rem; margin-top: -1rem; background: var(--color-gray3); content:"";}
-.cp-cart .price {font-size: 2.48rem; font-weight: 700; color: var(--color-black2);}
+.cp-cart .price {margin-top: 2.64rem; font-size: 2.48rem; font-weight: 700; color: var(--color-black2);}
 .cp-cart .dc-price {padding-left: 1.2rem; font-size: 2rem; font-weight: 400; color: var(--color-gray3); text-decoration: line-through;}
+
+.cp-cart.order .cp-cart-body {padding-left: 0 !important;}
+.cp-cart.order .cp-cart-item ~ .cp-cart-item {margin: 0;}
