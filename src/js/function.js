@@ -1,6 +1,11 @@
 'use stict'
 
-
+/**
+ * Swiper Slider
+ * @param {string} t : 타겟(id or class)
+ * @param {*} opt : swiper options
+ * @returns {el, swiper} 선택자(타겟), 생성된 swiper
+ */
 export const slider = function(t, opt) {
   if(document.querySelectorAll(t).length > 0){
     const options = opt;

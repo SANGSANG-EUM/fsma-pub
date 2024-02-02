@@ -162,6 +162,15 @@ $(document).ready(function () {
   };
   const prodDetailThumbSlider = f.slider(prodDetailThumbTarget, prodDetailThumbOptions);
 
+  //Product Detail Related Products Slide
+  const prodDetailRelTarget = '.prod-detailRel-slide .swiper-container';
+  const prodDetailRelOptions = {
+    slidesPerView: "auto",
+    freeMode: true
+  };
+  const prodDetailRelSlider = f.slider(prodDetailRelTarget, prodDetailRelOptions);
+
+  //Scroll Event
   $(window).scroll(function () {
     let scrHeight = $(document).scrollTop();
 
