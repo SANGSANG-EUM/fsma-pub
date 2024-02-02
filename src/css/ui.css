@@ -150,6 +150,11 @@ a.ui-btn.sizeS {line-height: 3.5rem;}
 .prod-info_area .price {font-size: 2.96rem; font-weight: 700; color: var(--color-black2); line-height: 1;}
 .prod-tag_area {display: flex; gap: 0.64rem;}
 .cp-item .prod-tag_area {margin-top: 1.28rem;}
+.prod-review_area {display: flex; flex-flow: row wrap; align-items: center; margin-top: 3rem;}
+.prod-review_area .rv-star {display: block;}
+.prod-review_area .rv-star.cnt-only {width: 2.6rem; height: 2.48rem; background: url('../img/star.svg') no-repeat center/contain;}
+.prod-review_area .rv-rating {margin: 0 1.44rem 0 0.52rem; font-size: 2.8rem; font-weight: 700; color: var(--color-black3); line-height: 1;}
+.prod-review_area .rv-move-btn {border-bottom: 0.16rem solid var(--color-gray3); font-size: 2rem; font-weight: 500; color: var(--color-gray3);}
 
 .cp-item .small {}
 .cp-item .small .name {font-size: 2.4rem;}
