@@ -334,3 +334,16 @@ a.ui-btn.sizeS {line-height: 3.5rem;}
 .cp-cart .set p:not(:last-child)::after {position: absolute; right: 1.6rem; top: 50%; width: 0.04rem; height: 2rem; margin-top: -1rem; background: var(--color-gray3); content:"";}
 .cp-cart .price {font-size: 2.48rem; font-weight: 700; color: var(--color-black2);}
 .cp-cart .dc-price {padding-left: 1.2rem; font-size: 2rem; font-weight: 400; color: var(--color-gray3); text-decoration: line-through;}
+
+/* 배송지 */
+.dv-add-wr {}
+.dv-add-top {display: flex; align-items: center; gap: 1.2rem;}
+.dv-add-name {font-weight: 500; font-size: 2.16rem; color: var(--color-black2);}
+.dv-add-config {display: flex; align-items: center; justify-content: center; background-color: #f9f9f9; border-radius: 0.8rem; font-weight: 500; font-size: 2rem; color: var(--color-gray2); width: 10.28rem; height: 3.4rem;}
+.dv-add-cont {display: flex; align-items: flex-start; justify-content: space-between; padding-top: 2.28rem;}
+.dv-add-left {width: 34rem;}
+.dv-address {font-weight: 400; font-size: 2.16rem; line-height: 1.29; color: var(--color-black3);}
+.dv-address-num {font-weight: 400; font-size: 2.16rem; line-height: 1.666; color: var(--color-black3);}
+.dv-add-right {}
+.dv-add-msg {padding-top: 3.2rem;}
+.dv-add-msg .frm-select {width: 100%; height: 5.6rem; border-radius: 0.8rem; padding-left: 2.6rem; padding-right: 3.04rem; font-weight: 400; font-size: 2rem; color: var(--color-gray2); background: url('../img/arrow-down.png') no-repeat center right 2.4rem/1.6rem, var(--color-white);}
