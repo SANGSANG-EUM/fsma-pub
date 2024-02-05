@@ -71,7 +71,7 @@
 .prod-smInfo__head .prod-info_area .name {margin-bottom: 1.4rem;}
 .prod-smInfo__head .prod-info_area .dc-price {font-size: 2.4rem;}
 .prod-smInfo__head .prod-info_area .dc-percent {font-size: 3.2rem;}
-.prod-smInfo__head .prod-info_area .price {font-size: 3.2rem;}
+.prod-smInfo__head .prod-info_area .sale-price {font-size: 3.2rem;}
 .prod-smInfo__head .share-btn {position: absolute; top: 0; right: 2.4rem; z-index: 10; width: 3.6rem; height: 3.6rem; background: url('../img/share.svg') no-repeat center/contain;}
 .prod-smInfo__head .prod-review_area {margin-top: 3rem;}
 
