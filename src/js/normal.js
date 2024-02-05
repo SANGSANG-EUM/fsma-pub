@@ -168,7 +168,7 @@ $(document).ready(function () {
 
   prodDetailMoreBtn.on('click', function(){
     prodDetailInfo.addClass("on");
-  })
+  });
 
 
   //Product Detail Related Products Slide
