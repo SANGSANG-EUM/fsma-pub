@@ -174,22 +174,14 @@ $(document).ready(function () {
   const prodDcEl = $(".prod-info_area");
 
   prodDcEl.each(function() {
-    /* 할인율 랜더링 함수 다시!
-    const prodSupPrice = parseFloat($(this).find('.dc-price').text().replace(/[^0-9]/g, ''));
-    
-    const prodSalePrice = parseFloat($(this).find('.price').text().replace(/[^0-9]/g, ''));
+    if($(this).find('.dc-price').length > 0) {
+      const prodSupPrice = parseFloat($(this).find('.dc-price').text().replace(/[^0-9]/g, ''));
+      const prodSalePrice = parseFloat($(this).find('.sale-price').text().replace(/[^0-9]/g, ''));
+      const prodDcPerEl = $(this).find('.dc-percent');
+      let dcPercentNum = f.dcPercent(prodSupPrice, prodSalePrice);
 
-    // 가격 데이터 추출
-    const priceText = $(this).find('.price').contents().filter(function() {
-        return this.nodeType === 3;
-    }).text();
-
-    // 콤마 제거 후 숫자만 추출
-    const priceNumber = parseFloat(priceText.replace(/[^0-9]/g, ''));
-    const prodDcPerEl = $(this).find('.dc-percent');
-
-    console.log(prodSupPrice, priceNumber);
-    */
+      prodDcPerEl.text(dcPercentNum+'%');
+    }
   });
 
   //Scroll Event
