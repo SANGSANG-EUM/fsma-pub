@@ -170,6 +170,20 @@ $(document).ready(function () {
   };
   const prodDetailRelSlider = f.slider(prodDetailRelTarget, prodDetailRelOptions);
 
+  //Product Discount Rate
+  const prodDcEl = $(".prod-info_area");
+
+  prodDcEl.each(function() {
+    if($(this).find('.dc-price').length > 0) {
+      const prodSupPrice = parseFloat($(this).find('.dc-price').text().replace(/[^0-9]/g, ''));
+      const prodSalePrice = parseFloat($(this).find('.sale-price').text().replace(/[^0-9]/g, ''));
+      const prodDcPerEl = $(this).find('.dc-percent');
+      let dcPercentNum = f.dcPercent(prodSupPrice, prodSalePrice);
+
+      prodDcPerEl.text(dcPercentNum+'%');
+    }
+  });
+
   //Scroll Event
   $(window).scroll(function () {
     let scrHeight = $(document).scrollTop();

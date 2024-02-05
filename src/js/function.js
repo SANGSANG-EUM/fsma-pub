@@ -103,3 +103,15 @@ export const timeSale = function(t) {
     })
   }
 }
+
+/**
+ * 할인율 계산 : ((공급가 - 판매가) / 공급가) * 100                        
+ * @param {number} supPrice : 공급가
+ * @param {number} salePrice : 판매가
+ * @returns {number} 할인율
+ */
+export const dcPercent = (supPrice, salePrice) => {
+  const percent = Math.round(((supPrice - salePrice) / supPrice) * 100);
+
+  return percent;
+}
