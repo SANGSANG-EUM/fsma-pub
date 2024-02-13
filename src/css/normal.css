@@ -142,7 +142,7 @@
 .exhibDetail .exhib-dp {padding-top: 4.8rem;}
 
 /* member */
-/* > login */
+/* > 로그인 */
 #contents.login {text-align: center; padding-top: 6.4rem; padding-bottom: 0;}
 .login-wrap {}
 .login-logo {display: inline-block; margin-bottom: 4rem;}
@@ -168,3 +168,19 @@
 .sns-link.google {background-color: #F9F9F9; background-image: url('../img/icon-sns-google.png'); border: 1px solid var(--color-gray5);}
 .sns-link.naver {background-color: #03C75A; background-image: url('../img/icon-sns-naver.png'); background-size: 2.4rem;}
 .sns-link.kakao {background-color: #FEE500; background-image: url('../img/icon-sns-kakao.png');}
+
+/* > 회원가입 - 가입구분 */
+#contents.joinType {padding-top: 6.4rem;}
+.joinType-wrap {}
+.joinType-head {margin-bottom: 5.2rem; text-align: center;}
+.joinType-head img {margin-bottom: 2.2rem; width: 10.84rem;}
+.joinType-head p {font-size: 2rem; font-weight: 400; color: var(--color-gray2);}
+.joinType-body {text-align: center;}
+.joinType-body .ui-btn {display: block; padding: 3.2rem 0; border-radius: 10rem;}
+.joinType-body .ui-btn ~ .ui-btn {margin-top: 0.8rem;}
+.joinType-body .ui-btn img {height: 4.8rem;}
+.joinType-body .ui-btn .joinType-text1 {margin-top: 1.2rem; font-size: 2.56rem; font-weight: 600;}
+.joinType-body .ui-btn .joinType-text2 {margin-top: 1.2rem; font-size: 2rem; font-weight: 400;}
+.joinType-body .ui-btn.stBlack .joinType-text2 {color: #F2F2F2;}
+.joinType-body .ui-btn.stWhite .joinType-text1 {color: var(--color-black3);}
+.joinType-body .ui-btn.stWhite .joinType-text2 {color: var(--color-gray3);}
