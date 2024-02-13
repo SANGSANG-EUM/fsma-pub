@@ -58,7 +58,7 @@ a.ui-btn.sizeS {line-height: 3.5rem;}
 /* Form Elements */
 .frm-input {padding-left: 2.6rem; padding-right: 2.6rem; height: 5.6rem; border: 1px solid var(--color-gray4); font-size: 2rem; font-weight: 400; color: var(--color-gray2); border-radius: 0.8rem;}
 .frm-input:focus {border-color: var(--color-main); box-shadow: 0 0 0.5rem var(--color-main);}
-.frm-input:disabled {background-color: var(--color-gray8);}
+.frm-input:disabled, .frm-input:read-only {background-color: var(--color-gray8);}
 .frm-input::placeholder {color: var(--color-gray3);}
 
 .frm-select {padding-left: 2.6rem; padding-right: 4.5rem; height: 5.6rem; border: 1px solid var(--color-gray4); border-radius: 0.8rem; font-size: 2rem; font-weight: 400; color: var(--color-gray2); background: url('../img/arrow-down.png') no-repeat center right 2rem/1.44rem, var(--color-white); appearance: none;}
@@ -89,6 +89,30 @@ a.ui-btn.sizeS {line-height: 3.5rem;}
 .search .keyword {padding-left: 1.72rem; padding-right: 6rem; height: 5.44rem; border: 0; font-size: 2.08rem; font-weight: 400; color: var(--color-black); background-color: var(--color-white);}
 .search .keyword::placeholder {color: var(--color-gray3);}
 .search .submit {position: absolute; top: 50%; right: 1.72rem; transform: translateY(-50%); width: 3.2rem; height: 3.2rem; background: url('../img/search-gray.svg') no-repeat center/contain;}
+
+.id-confirm {display: flex; align-items: center; font-size: 0;}
+.id-confirm .frm-input {width: calc(100% - 13.72rem);}
+.id-confirm .ui-btn.st3 {margin-left: 0.52rem;}
+
+.phone {font-size: 0;}
+.phone .frm-input {display: inline-block; vertical-align: middle; width: calc((100% - 5.6rem) / 3);}
+.phone .hyphen {display: inline-block; vertical-align: middle; width: 2.8rem; font-size: 2rem; font-weight: 400; color: var(--color-gray2); text-align: center;}
+
+.email {font-size: 0;}
+.email .frm-input, .email .frm-select {display: inline-block; vertical-align: middle; width: calc((100% - 4rem) / 2);}
+.email .at {display: inline-block; vertical-align: middle; width: 4rem; font-size: 2rem; font-weight: 400; color: var(--color-gray2); text-align: center;}
+
+.address {font-size: 0;}
+.address .frm-input {display: block; width: 100%;}
+.address .frm-input ~ .frm-input {margin-top: 0.8rem;}
+.address .frm-input.address-input_1 {display: inline-block; vertical-align: middle; width: calc(100% - 13.72rem);}
+.address .ui-btn.st3 {display: inline-block; vertical-align: middle; width: 13.2rem; margin-left: 0.52rem;}
+
+.form-row ~ .form-row {margin-top: 2.8rem;}
+.form-row .form-head {margin-bottom: 1.6rem;}
+.form-row .form-head .title {font-size: 2.16rem; font-weight: 500; color: var(--color-black2);}
+.form-row .form-head .title b {padding-left: 0.6rem; font-weight: 500; color: var(--color-main);}
+.form-row .form-body .frm-choice {display: block; margin-top: 1.2rem;}
 
 /* Components */
 /* header */

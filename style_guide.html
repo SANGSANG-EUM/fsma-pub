@@ -173,6 +173,7 @@
           <li class="flex gap">
             <input type="text" name="" id="" class="frm-input" placeholder="텍스트 입력">
             <input type="text" name="" id="" class="frm-input" placeholder="텍스트 입력" disabled>
+            <input type="text" name="" id="" class="frm-input" placeholder="텍스트 입력" readonly>
             <select name="" id="" class="frm-select">
               <option value="">옵션 선택</option>
               <option value="">옵션 A</option>
@@ -212,6 +213,72 @@
         <div class="search">
           <input type="text" class="w-per100 round100 keyword">
           <button type="submit" class="ui-btn submit" title="검색하기"></button>
+        </div>
+      </div>
+      <div class="sb_section">
+        <h5>-- Input(중복검사)</h5>
+        <div class="id-confirm">
+          <input type="text" name="" id="" class="frm-input" placeholder="아이디를 입력해주세요.">
+          <button type="button" class="ui-btn st3">중복확인</button>
+        </div>
+      </div>
+      <div class="sb_section">
+        <h5>-- Input(휴대폰번호)</h5>
+        <div class="phone">
+          <input type="text" name="" id="" class="frm-input">
+          <span class="hyphen">-</span>
+          <input type="text" name="" id="" class="frm-input">
+          <span class="hyphen">-</span>
+          <input type="text" name="" id="" class="frm-input">
+        </div>
+      </div>
+      <div class="sb_section">
+        <h5>-- Input(이메일)</h5>
+        <div class="email">
+          <input type="text" name="" id="" class="frm-input" placeholder="이메일을 입력해주세요.">
+          <span class="at">@</span>
+          <select name="" id="" class="frm-select">
+            <option value="">선택하세요.</option>
+            <option value="">옵션 A</option>
+            <option value="">옵션 B</option>
+          </select>
+        </div>
+      </div>
+      <div class="sb_section">
+        <h5>-- Input(주소)</h5>
+        <div class="address">
+          <input type="text" name="" id="" class="frm-input address-input_1">
+          <button type="button" class="ui-btn st3">주소검색</button>
+          <input type="text" name="" id="" class="frm-input address-input_2">
+          <input type="text" name="" id="" class="frm-input address-input_3" placeholder="나머지 주소를 입력하세요.">
+        </div>
+      </div>
+      <div class="sb_section">
+        <h5>-- 입력 폼</h5>
+        <div class="form-row">
+          <div class="form-head">
+            <p class="title">아이디<b>*</b></p>
+          </div>
+          <div class="form-body id-confirm">
+            <input type="text" name="" id="" class="frm-input" placeholder="아이디를 입력해주세요.">
+            <button type="button" class="ui-btn st3">중복확인</button>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-head">
+            <p class="title">핸드폰번호<b>*</b></p>
+          </div>
+          <div class="form-body phone">
+            <input type="text" name="" id="" class="frm-input" readonly value="010">
+            <span class="hyphen">-</span>
+            <input type="text" name="" id="" class="frm-input" readonly value="1234">
+            <span class="hyphen">-</span>
+            <input type="text" name="" id="" class="frm-input" readonly value="5678">
+            <div class="frm-choice">
+              <input type="checkbox" name="chk" id="chk-sms" value="">
+              <label for="chk-sms">SMS 광고 수신 동의</label>
+            </div>
+          </div>
         </div>
       </div>
     </div>
