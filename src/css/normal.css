@@ -140,3 +140,31 @@
 .exhib-prod-ct .cp-item {width: calc(100% / 2 - 2.4rem);}
 
 .exhibDetail .exhib-dp {padding-top: 4.8rem;}
+
+/* member */
+/* > login */
+#contents.login {text-align: center; padding-top: 6.4rem; padding-bottom: 0;}
+.login-wrap {}
+.login-logo {display: inline-block; margin-bottom: 4rem;}
+.login-logo img {width: 10.84rem;}
+.login-input {}
+.login-input .frm-input {display: block; width: 100%; height: 7.2rem;}
+.login-input .frm-input ~ .frm-input {margin-top: 0.8rem;}
+.login-ctrl {display: flex; align-items: center; justify-content: space-between; margin-top: 1.4rem;}
+.login-save {}
+.login-nonmember {font-size: 2.16rem; font-weight: 400; color: var(--color-gray2);}
+.login-btn {margin-top: 3.8rem;}
+.login-btn .ui-btn {width: 100%; height: 7.2rem; font-size: 2.16rem; font-weight: 500;}
+.login-btn .ui-btn ~ .ui-btn {margin-top: 0.8rem;}
+.login-btn .search-btn {display: inline-block; margin-top: 3.6rem; font-size: 2.16rem; font-weight: 400; color: var(--color-gray2);}
+
+.sns-wrap {margin-top: 12.8rem;}
+.sns-head {position: relative; display: block; font-size: 0;}
+.sns-head::before {content:""; position: absolute; left: 0; top: 50%; width: 100%; height: 1px; border-top: 1px solid var(--color-gray10);}
+.sns-body {margin-top: 2.8rem; font-size: 0;}
+.sns-title {position: relative; display: inline-block; vertical-align: middle; padding: 0 1.6rem; font-size: 2rem; font-weight: 400; color: var(--color-gray3); background: var(--color-white);}
+.sns-link {display: inline-block; vertical-align: middle; width: 8rem; height: 8rem; border-radius: 50%; font-size: 0; background-repeat: no-repeat; background-position: center center; background-size: 2.8rem;}
+.sns-link:not(:last-child) {margin-right: 1.2rem;}
+.sns-link.google {background-color: #F9F9F9; background-image: url('../img/icon-sns-google.png'); border: 1px solid var(--color-gray5);}
+.sns-link.naver {background-color: #03C75A; background-image: url('../img/icon-sns-naver.png'); background-size: 2.4rem;}
+.sns-link.kakao {background-color: #FEE500; background-image: url('../img/icon-sns-kakao.png');}
