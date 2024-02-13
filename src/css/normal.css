@@ -32,6 +32,7 @@
 .main_best .cp-title .icon-box:after {width: 2.16rem; height: 3.4rem; background-image: url('../img/icon-best.svg');}
 .main_best-slide {}
 .main_best-slide .cp-item {width: 32rem; margin-right: 2rem;}
+.main_best-slide .cp-item .prod-thumb_area .num {display: block;}
 
 .main_recomm .cp-title .icon-box:after {width: 2.92rem; height: 3.6rem; background-image: url('../img/icon-recomm.svg');}
 .main_recomm-slide .cp-item {width: 22rem; margin-right: 2rem;}
@@ -57,7 +58,7 @@
 .prod-dp {margin-top: 4.4rem;}
 .prod-dp__title h3 {font-size: 3.6rem; font-weight: 600; color: var(--color-black2);}
 .prod-dp-ct {display: flex; flex-flow: row wrap; align-items: flex-start; justify-content: flex-start; gap: 4.8rem 2.4rem; margin-top: 3.44rem;}
-.prod-dp-ct .cp-item {width: calc(100% / 2 - 2.4rem);}
+.prod-dp-ct .cp-item {width: calc(100% / 2 - 2.4rem / 2);}
 
 /* > detail */
 .prodDetail {margin-top: 0 !important;}
