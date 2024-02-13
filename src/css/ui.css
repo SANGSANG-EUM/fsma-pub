@@ -18,7 +18,7 @@ a.ui-btn.sizeS {line-height: 3.5rem;}
 .ui-btn.st2 {border: 0.16rem solid var(--color-main); color: var(--color-main); background-color: var(--color-white);}
 .ui-btn.st3 {height: 5.6rem; padding: 0 2.8rem; background: var(--color-white); border: 1px solid var(--color-gray5); font-size: 2.16rem; font-weight: 500; color: var(--color-black3); border-radius: 0.8rem;}
 .ui-btn.stBlack {color: var(--color-white); background-color: var(--color-black);}
-.ui-btn.stWhite {color: var(--color-black); background-color: var(--color-white); border: 1px solid var(--color-black);}
+.ui-btn.stWhite {color: var(--color-black); background-color: var(--color-white); border: 1px solid var(--color-gray5);}
 
 .ui-btn.active {color: var(--color-white); background-color: var(--color-main);}
 .ui-btn:disabled,
