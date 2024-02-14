@@ -319,6 +319,8 @@ a.ui-btn.sizeS {line-height: 3.5rem;}
 .rv-content-wr .rv-img-list {margin-bottom: 3.2rem;}
 .rv-content-wr .content {font-weight: 300; font-size: 2rem; color: var(--color-black3); line-height: 1.6; word-break: break-all;}
 .rv-content-wr .cont-more-btn {border: none; background-color: transparent; font-weight: 400; font-size: 2rem; line-height: 1.6; color: #aaa;}
+.rv-item .mngArea {display: flex; flex-flow: row wrap; align-items: center; justify-content: flex-start; gap: 0.5rem; margin-top: 2rem;}
+.rv-item .mngArea .ui-btn {height: auto; padding: 0.5rem 2rem; font-size: 1.8rem;}
 
 /* inquiry - title */
 .iq-title {display: flex; align-items: center; justify-content: space-between;}
