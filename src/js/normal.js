@@ -257,6 +257,16 @@ $(document).ready(function () {
     }
   });
 
+  //All menu
+  const depth1Btn = $('.all-ct-depth1-list > li');
+  depth1Btn.on('click',function(){
+    depth1Btn.removeClass('active');
+    $(this).addClass('active');
+    let idx = $(this).data('d1');
+    $('.all-ct-right').find('.all-ct-depth2-list').hide();
+    $('.all-ct-right').find(`.all-ct-depth2-list[data-d1=${idx}]`).show();
+  });
+
   //Scroll Event
   $(window).scroll(function () {
     let scrHeight = $(document).scrollTop();
