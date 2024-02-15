@@ -347,6 +347,7 @@ a.ui-btn.sizeS {line-height: 3.5rem;}
 .iq-content-title {width: calc(100% - 7.28rem);}
 .iq-content-title .cate {font-weight: 400; font-size: 2rem; color: var(--color-gray3); line-height: 1.6;}
 .iq-content-title .title {font-weight: 400; font-size: 2rem; color: var(--color-black2); line-height: 1.6;}
+.iq-content-title .title img {width: 1.6rem; margin: -2px 0.5rem 0 0;}
 .iq-content-status {padding-left: 1rem; width: 7.28rem;}
 .iq-content-status .status {display: flex; align-items: center; justify-content: center; width: 6.28rem; height: 3.68rem; border-radius: 0.8rem; font-weight: 400; font-size: 2rem; color: #fff;}
 .iq-content-status .status.wait {background-color: var(--color-gray3);}
@@ -434,7 +435,9 @@ a.ui-btn.sizeS {line-height: 3.5rem;}
 
 /* 메인 탑 배너 */
 .mtb-wrap {position: relative;}
-.mtb-wrap .item .link {display: block;}
+.mtb-wrap .swiper-wrapper {height: auto;}
+.mtb-wrap .item {height: 0 !important; padding-bottom: 13.889%;}
+.mtb-wrap .item .image {display: block; position: relative; overflow: hidden; font-size: 0;}
 .mtb-close-btn {position: absolute; top: 50%; right: 2.4rem; transform: translateY(-50%); border: none; background-color: transparent; z-index: 1; width: 2.4rem; height: 2.4rem;}
 
 /* 메인 팝업 배너 */

@@ -4,34 +4,26 @@ import * as f from './function.js';
 
 $(document).ready(function () {
   const popDim = $(".popDim");
-
+  
   // Match Height
   $(".match_h > *").matchHeight();
 
   // Feather Icon
   feather.replace();
 
-  //Top Menu
-  let quickMenuActive = '';
-  const quickMenuTarget = '#topMenu .qk-menu';
-  const quickMenu = f.hrizonMenu(quickMenuTarget, quickMenuActive);
-
   //Main Top Banner
   const mainTopBannerTarget = '.mtb-wrap .swiper-container';
   const mainTopBannerOptions = {
     slidesPerView: 1,
     loop: true,
-    // autoplay: {
-    //   delay: 3000,
-    // },
+    loopAdditionalSlides : 1,
+    watchOverflow : true,
+    autoplay: {
+      delay: 3000,
+    },
     speed: 1000,
-    centeredSlides: true,
-    //direction: "vertical",
-    //autoHeight : true,
-    //pagination: {
-    //  el: `${mainVisualTarget} .pagination`,
-    //  type: 'fraction',
-    //},
+    direction: "vertical",
+    autoHeight: true,
   };
   const mainTopBannerSlider = f.slider(mainTopBannerTarget, mainTopBannerOptions);
 
@@ -39,7 +31,7 @@ $(document).ready(function () {
   const mtbCloseBtn = document.querySelector('.mtb-close-btn');
   const mtbWrap = document.querySelector('.mtb-wrap');
 
-  mtbCloseBtn.addEventListener('click', function() {
+  mtbCloseBtn?.addEventListener('click', function() {
     mtbWrap.style.maxHeight = '0';
   });
 
@@ -214,6 +206,8 @@ $(document).ready(function () {
   const prodDetailThumbOptions = {
     slidesPerView: 1,
     loop: true,
+    loopAdditionalSlides : 1,
+    watchOverflow : true,
     // autoplay: {
     //   delay: 3000,
     // },
@@ -244,6 +238,7 @@ $(document).ready(function () {
   const prodDetailRelSlider = f.slider(prodDetailRelTarget, prodDetailRelOptions);
 
   //Product Discount Rate
+  /*
   const prodDcEl = $(".prod-info_area");
 
   prodDcEl.each(function() {
@@ -256,15 +251,50 @@ $(document).ready(function () {
       prodDcPerEl.text(dcPercentNum+'%');
     }
   });
+  */
 
-  //All menu
-  const depth1Btn = $('.all-ct-depth1-list > li');
-  depth1Btn.on('click',function(){
-    depth1Btn.removeClass('active');
-    $(this).addClass('active');
-    let idx = $(this).data('d1');
-    $('.all-ct-right').find('.all-ct-depth2-list').hide();
-    $('.all-ct-right').find(`.all-ct-depth2-list[data-d1=${idx}]`).show();
+  //Product Detail Buy Area
+  const buyArea = $(".prod-buy_area");
+  const buyArea_class = "prod-buy_area";
+  const buyActBox = buyArea.find(".actBox");
+  const buyDfBox = buyArea.find(".dfBox");
+  const buyOpenBtn = buyArea.find(".buy-btn.dp");
+
+  buyOpenBtn.on('click', function(){
+    buyArea.addClass('on');
+    buyActBox.show();
+    buyDfBox.hide();
+    popDim.fadeIn(200);
+  });
+
+  //Product Detail Share
+  const prodShareOpenBtn = $(".prod-smInfo__head .share-btn");
+  const prodSharePop = $("#prodShare");
+  const prodShareCloseBtn = prodSharePop.find(".close-btn");
+
+  prodShareOpenBtn.on('click', function(){
+    prodSharePop.addClass('on');
+    popDim.fadeIn(200);
+  });
+
+  prodShareCloseBtn.on('click', function(){
+    prodSharePop.removeClass('on');
+    popDim.fadeOut(200);
+  });
+
+  //popup dim click event
+  popDim.on('click', function() {
+    if(buyArea.hasClass('on')){
+      buyArea.removeClass('on');
+      buyActBox.hide();
+      buyDfBox.show();
+      popDim.fadeOut(200);
+    }
+
+    if(prodSharePop.hasClass('on')){
+      prodSharePop.removeClass('on');
+      popDim.fadeOut(200);
+    }
   });
 
   //Scroll Event
@@ -279,4 +309,3 @@ $(document).ready(function () {
     }
   }); //End window scroll
 }); //End document
-
