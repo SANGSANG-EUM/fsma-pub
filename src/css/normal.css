@@ -63,8 +63,9 @@
 /* > detail */
 .prodDetail {margin-top: 0 !important;}
 
-.prod-detailThumb .swiper-control {width: auto; padding: 0 2rem;}
+.prod-detailThumb .swiper-control {display: none; width: auto; padding: 0 2rem;}
 .prod-detailThumb .swiper-control .pagination {margin-left: 0;}
+.prod-detailThumb .swiper-control.on {display: flex;}
 
 .prod-smInfo {margin-top: 2rem;}
 .prod-smInfo__head {position: relative; padding-bottom: 4rem;}
