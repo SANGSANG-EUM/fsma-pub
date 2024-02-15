@@ -444,3 +444,41 @@ a.ui-btn.sizeS {line-height: 3.5rem;}
 .mpb-btn-wrap .container {display: flex; align-items: center; justify-content: space-between; height: 7.2rem;}
 .mpb-btn-wrap .onlytodayshow {border: none; background-color: transparent; font-weight: 400; font-size: 2.16rem; color: #333;}
 .mpb-btn-wrap .mpb-close-btn {border: none; background-color: transparent; font-weight: 400; font-size: 2.16rem; color: #999;}
+
+/* 텍스트 게시판 */
+.txt-board-list {}
+.txt-board-cnt {font-weight: 400; font-size: 2rem; color: #0f0f0f; padding-bottom: 1.6rem;}
+.txt-board-cnt .cnt {font-weight: 700; font-size: 2.16rem; color: var(--color-main);}
+.txt-board {border-top: 0.16rem solid #e9e9e9;}
+.txt-board-item {border-bottom: 0.16rem solid #e9e9e9; padding: 3.2rem 0 2.8rem;}
+.txt-board-item .link {display: block; background: url('/src/img/txt-board-arr-icon.png') no-repeat center right 0.76rem/1.52rem; padding-right: 2.1rem;}
+.txt-board-item .link .tit {font-weight: 400; font-size: 2.16rem; color: #0f0f0f; line-height: 1;}
+.txt-board-item .link .date {font-weight: 400; font-size: 2rem; color: #999; line-height: 1; padding-top: 1.8rem;}
+
+/* 페이징 */
+.paging {padding-top: 2rem;}
+.pg-ul {display: flex; align-items: center; justify-content: center; gap: 0 2rem;}
+.pg-ul li {}
+.pg-ul li a {display: flex; align-items: center; justify-content: center;}
+.pg-ul li .pg {font-weight: 400; font-size: 2.16rem; color: #999;}
+.pg-ul li .pg.active {color: #333; font-weight: 500;}
+.pg-ul li .pg-round {width: 4.4rem; height: 4.4rem; border: 1px solid #ddd; border-radius: 50%;}
+.pg-ul li .pg-prev {background: url('/src/img/pg-prev.png') no-repeat center; background-size: 0.72rem 1.6rem;}
+.pg-ul li .pg-next {background: url('/src/img/pg-next.png') no-repeat center; background-size: 0.72rem 1.6rem;}
+
+/* 게시판 상세 */
+.txt-board-view {}
+.tb-view-title {border-bottom: 0.16rem solid #e9e9e9; padding-bottom: 2.8rem;}
+.tb-view-title .tit {font-weight: 400; font-size: 2.16rem; color: #0f0f0f; line-height: 1.48;}
+.tb-view-title .date {font-weight: 400; font-size: 2rem; color: #999; line-height: 1; padding-top: 1.8rem;}
+.tb-view-cont {border-bottom: 0.16rem solid #e9e9e9; padding: 3.2rem 0 4rem;}
+.tb-view-cont p {font-weight: 300; font-size: 2rem; line-height: 1.6;}
+
+/* 게시판 이전글, 다음글 */
+.tb-nb {}
+.tb-nb-item {border-bottom: 0.16rem solid #e9e9e9; padding: 2.72rem 1.76rem; font-size: 0;}
+.tb-nb-item > * {display: inline-block; vertical-align: middle;}
+.tb-nb-item .nb-tit {font-weight: 400; font-size: 2rem; color: #999; position: relative; padding-left: 3.24rem; width: 8.5rem;}
+.tb-nb-prv .nb-tit::before {content: ''; height: 0.64rem; width: 1.28rem; background: url('/src/img/tb-nb-top.png') no-repeat center/cover; position: absolute; top: 50%; left: 0; transform: translateY(-50%);}
+.tb-nb-nxt .nb-tit::before {content: ''; height: 0.64rem; width: 1.28rem; background: url('/src/img/tb-nb-btm.png') no-repeat center/cover; position: absolute; top: 50%; left: 0; transform: translateY(-50%);}
+.tb-nb-item .link {font-weight: 400; font-size: 2.16rem; color: #333; width: calc(100% - 8.5rem); padding-left: 2.64rem;}
