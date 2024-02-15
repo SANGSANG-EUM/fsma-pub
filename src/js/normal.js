@@ -41,6 +41,34 @@ $(document).ready(function () {
     mtbWrap.style.maxHeight = '0';
   });
 
+  //Main Popup Banner
+  const mainPopBannerTarget = '.mpb-wrap .swiper-container';
+  const mainPopBannerOptions = {
+    slidesPerView: 1,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+    },
+    speed: 1000,
+    centeredSlides: true,
+    //direction: "vertical",
+    //autoHeight : true,
+    //pagination: {
+    //  el: `${mainVisualTarget} .pagination`,
+    //  type: 'fraction',
+    //},
+  };
+  const mainPopBannerSlider = f.slider(mainPopBannerTarget, mainPopBannerOptions);
+
+  //Main Popup
+  const mainPopUp = $('.main-popup');
+  const mainPopUpClose = $('.mpb-close-btn');
+
+  mainPopUp.addClass('active');
+  mainPopUpClose.on('click',function(){
+    mainPopUp.removeClass('active');
+  });
+
   //Main Visual Slide
   const mainVisualTarget = '.main_visual .swiper-container';
   const mainVisualOptions = {

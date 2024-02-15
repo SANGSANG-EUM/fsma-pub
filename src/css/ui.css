@@ -434,3 +434,11 @@ a.ui-btn.sizeS {line-height: 3.5rem;}
 .mtb-wrap {position: relative;}
 .mtb-wrap .item .link {display: block;}
 .mtb-close-btn {position: absolute; top: 50%; right: 2.4rem; transform: translateY(-50%); border: none; background-color: transparent; z-index: 1; width: 2.4rem; height: 2.4rem;}
+
+/* 메인 팝업 배너 */
+.mpb-wrap {}
+.mpb-img-wrap {border-radius: 2rem 2rem 0 0; overflow: hidden;}
+.mpb-btn-wrap {border-top: 1px solid rgba(0,0,0,0.5); background-color: #fff;}
+.mpb-btn-wrap .container {display: flex; align-items: center; justify-content: space-between; height: 7.2rem;}
+.mpb-btn-wrap .onlytodayshow {border: none; background-color: transparent; font-weight: 400; font-size: 2.16rem; color: #333;}
+.mpb-btn-wrap .mpb-close-btn {border: none; background-color: transparent; font-weight: 400; font-size: 2.16rem; color: #999;}

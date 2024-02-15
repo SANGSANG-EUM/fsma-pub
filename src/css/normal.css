@@ -187,3 +187,7 @@
 .joinType-body .ui-btn.stBlack .joinType-text2 {color: #F2F2F2;}
 .joinType-body .ui-btn.stWhite .joinType-text1 {color: var(--color-black3);}
 .joinType-body .ui-btn.stWhite .joinType-text2 {color: var(--color-gray3);}
+
+/* 메인 팝업 배너 */
+.main-popup {position: fixed; bottom: -100%; left: 0; width: 100%; z-index: 100; transition: 1s ease-in-out;}
+.main-popup.active {bottom: 0;}
