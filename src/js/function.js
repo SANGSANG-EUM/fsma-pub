@@ -13,7 +13,6 @@ export const slider = function(t, opt) {
     const el = document.querySelector(t);
     const swiperControl = el?.querySelector(".swiper-control");
 
-
     if (swiperControl) {
       if(swiper.slides.length <= 1) {
         el.querySelector(".swiper-control").classList.remove('on');
