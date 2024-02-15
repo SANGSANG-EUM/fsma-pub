@@ -14,6 +14,33 @@ $(document).ready(function () {
   const quickMenuTarget = '#topMenu .qk-menu';
   const quickMenu = f.hrizonMenu(quickMenuTarget, quickMenuActive);
 
+  //Main Top Banner
+  const mainTopBannerTarget = '.mtb-wrap .swiper-container';
+  const mainTopBannerOptions = {
+    slidesPerView: 1,
+    loop: true,
+    // autoplay: {
+    //   delay: 3000,
+    // },
+    speed: 1000,
+    centeredSlides: true,
+    //direction: "vertical",
+    //autoHeight : true,
+    //pagination: {
+    //  el: `${mainVisualTarget} .pagination`,
+    //  type: 'fraction',
+    //},
+  };
+  const mainTopBannerSlider = f.slider(mainTopBannerTarget, mainTopBannerOptions);
+
+  //Main Top Banner Close
+  const mtbCloseBtn = document.querySelector('.mtb-close-btn');
+  const mtbWrap = document.querySelector('.mtb-wrap');
+
+  mtbCloseBtn.addEventListener('click', function() {
+    mtbWrap.style.maxHeight = '0';
+  });
+
   //Main Visual Slide
   const mainVisualTarget = '.main_visual .swiper-container';
   const mainVisualOptions = {

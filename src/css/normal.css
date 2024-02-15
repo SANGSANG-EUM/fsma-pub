@@ -17,12 +17,14 @@
 .copyright {margin-top: 0.4rem; font-size: 1.6rem; font-weight: 300; color: var(--color-gray3);}
 
 /* main */
+.mtb-wrap {margin-top: 0; max-height: 200px; transition: .6s; overflow: hidden;}
+
 .main-contents .cp-title {margin-bottom: 1.83rem;}
 .main-contents .cp-title .tp-expl {margin-top: 0.8rem;}
 
 .bottom_box {margin-top: 2.4rem;}
 
-.main_visual {margin-top: 0;}
+.main_visual {margin-top: 2.4rem;}
 .main_visual .item {height: 0; padding-bottom: 75.758%;}
 .main_visual .item .link {display: block;}
 .main_visual .item .image {position: relative; overflow: hidden; font-size: 0;}
