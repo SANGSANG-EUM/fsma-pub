@@ -3,6 +3,8 @@
 import * as f from './function.js';
 
 $(document).ready(function () {
+  const popDim = $(".popDim");
+
   // Match Height
   $(".match_h > *").matchHeight();
 
@@ -46,9 +48,9 @@ $(document).ready(function () {
   const mainPopBannerOptions = {
     slidesPerView: 1,
     loop: true,
-    autoplay: {
-      delay: 3000,
-    },
+    //autoplay: {
+    //  delay: 3000,
+    //},
     speed: 1000,
     centeredSlides: true,
     //direction: "vertical",
@@ -63,9 +65,16 @@ $(document).ready(function () {
   //Main Popup
   const mainPopUp = $('.main-popup');
   const mainPopUpClose = $('.mpb-close-btn');
+  const mainPopOnlyToday = $('.onlytodayshow');
 
   mainPopUp.addClass('active');
+
+  if(mainPopUp.hasClass('active')) {
+    popDim.show();
+  }
+  
   mainPopUpClose.on('click',function(){
+    popDim.fadeOut(500);
     mainPopUp.removeClass('active');
   });
 

@@ -189,5 +189,26 @@
 .joinType-body .ui-btn.stWhite .joinType-text2 {color: var(--color-gray3);}
 
 /* 메인 팝업 배너 */
-.main-popup {position: fixed; bottom: -100%; left: 0; width: 100%; z-index: 100; transition: 1s ease-in-out;}
+.main-popup {position: fixed; bottom: -100%; left: 50%; transform: translateX(-50%); width: 100%; max-width: 1440px; z-index: 550; transition: 1s ease-in-out;}
 .main-popup.active {bottom: 0;}
+
+/* 전체메뉴 */
+.all-ct-wrap {position: fixed; background-color: #fff; z-index: 700; top: 0; left: 50%; transform: translateX(-50%); width: 1440px; max-width: 100%; height: 100vh; display: none;}
+.all-ct {display: flex; align-items: flex-start; height: 100vh;}
+.all-ct-left {width: 20rem; height: 100%;}
+
+.all-ct-depth1-list {height: 100%; background-color: #fafafa; height: 100%; overflow-y: auto;}
+.all-ct-depth1-list li {cursor: pointer; display: flex; align-items: center; height: 8rem; background-color: #fafafa; font-weight: 400; font-size: 2.16rem; color: #888; padding-left: 3.6rem; transition: .3s;}
+.all-ct-depth1-list li.active {background-color: #fff; font-weight: 700; color: #0f0f0f;}
+
+.all-ct-right {width: calc(100% - 20rem); padding-left: 2.8rem; padding-right: 2.8rem; height: 100%; overflow-y: auto;}
+.all-ct-depth2-list {}
+.all-ct-depth2-list > li {}
+.all-ct-depth2-list > li > a {display: flex; align-items: center; gap: 0 1.2rem; height: 8rem; font-weight: 700; font-size: 2.16rem; color: #0f0f0f;}
+.all-ct-depth2-list > li > a span {display: inline-block;}
+.all-ct-depth2-list > li > a .ic {width: 6rem; height: 6rem; display: flex; align-items: center; justify-content: center;}
+.all-ct-depth2-list > li > a .ic img {}
+.all-ct-depth2-list > li > a .ic-right {width: 0.6232rem;}
+.all-ct-depth3-list {border-bottom: 0.16rem solid #e9e9e9;}
+.all-ct-depth3-list li {padding: 1.8rem 0.8rem;}
+.all-ct-depth3-list li a {font-weight: 400; font-size: 2rem; color: #444;}
