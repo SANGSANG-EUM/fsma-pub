@@ -369,12 +369,19 @@ a.ui-btn.sizeS {line-height: 3.5rem;}
 .info-item .cont {font-weight: 300; font-size: 2.16rem; color: var(--color-gray2); line-height: 1.666; width: calc(100% - 12.68rem);}
 
 /* popup */
-.pop-imsi {position: relative; height: 100vh;}
-.popup {position: absolute; top: 0; left: 0; right: 0; bottom: 0;}
-.pop-bg {background-color: rgba(0,0,0,0.5); z-index: 50;}
-.pop-inner {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); z-index: 51; background-color: #fff; width: 90%; overflow-y: auto; max-height: 90%; border-radius: 5rem; padding: 3rem;}
-.pop-inner .pop-top {display: flex; justify-content: flex-end;}
-.pop-inner .pop-top {}
+.pop-imsi {position: relative; height: 80rem ; background-color: rgba(0,0,0,0.5);}
+.popup {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); max-width: 1440px; width: 100%; max-height: calc(100% - 20rem); height: 100%;}
+.pop-inner {position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); z-index: 500; background-color: #fff; width: calc(100% - 4.8rem); border-radius: 2rem; padding: 3.24rem 1.96rem 2.24rem; max-height: 100%; height: 100%;}
+.pop-inner .pop-top {display: flex; align-items: center; justify-content: center; margin-bottom: 2.8rem; height: 1.68rem; position: relative;}
+.pop-inner .pop-top .tit {font-weight: 600; font-size: 2.4rem; color: #0f0f0f; line-height: 1;}
+.pop-inner .pop-content {max-height: calc(100% - 14.08rem); overflow-y: auto;}
+.pop-inner .pop-content-in {}
+.pop-inner .pop-btm {height: 6.8rem;}
+.pop-inner .pop-btm {margin-top: 2.8rem; display: flex; align-items: center; justify-content: center;}
+.pop-inner .pop-btm .btn {display: flex; align-items: center; justify-content: center; width: 21.8rem; height: 6.8rem; background-color: #222; border-radius: 3.6rem; font-weight: 500; font-size: 2.16rem; color: #fff; border: none;}
+
+.type02 .pop-inner .pop-content {max-height: calc(100% - 4.48rem);}
+.type02 .pop-inner .pop-top .close {width: 2rem; height: 2rem; background: url('../img/icon-close.svg') no-repeat center center/cover; font-size: 0; border: none; background-color: transparent; position: absolute; top: 50%; right: 0; transform: translateY(-50%);}
 
 /* Cart */
 .cp-cart {padding: 0 2.4rem;}
