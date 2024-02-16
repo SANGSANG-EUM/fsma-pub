@@ -124,3 +124,17 @@ export const dcPercent = (supPrice, salePrice) => {
 
   return percent;
 }
+
+//아코디언 메뉴
+export const arcodianF = () => {
+  let arcoBtn = $('.arcodianBtn');
+  arcoBtn.on('click',function(){
+    const $this = $(this);
+    $this.toggleClass('active');
+    if($this.hasClass('active')){
+      $this.next().slideDown();
+    }else{
+      $this.next().slideUp();
+    }
+  });
+}

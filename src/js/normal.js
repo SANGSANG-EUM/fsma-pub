@@ -11,6 +11,9 @@ $(document).ready(function () {
   // Feather Icon
   feather.replace();
 
+  // Arcodian Function
+  f.arcodianF();
+
   //Main Top Banner
   const mainTopBannerTarget = '.mtb-wrap .swiper-container';
   const mainTopBannerOptions = {
