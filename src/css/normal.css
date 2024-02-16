@@ -191,9 +191,38 @@
 /* > 회원가입 - 약관동의 */
 #contents.joinAgree {padding-top: 6.4rem;}
 .joinAgree-wrap {}
-.joinAgree-head {}
+.joinAgree-head {margin-bottom: 5.2rem;}
 .joinAgree-head p {font-size: 3.6rem; font-weight: 400; color: var(--color-black2); line-height: 4.8rem;}
 .joinAgree-head p b {font-weight: 700; color: var(--color-main);}
+.joinAgree-body {}
+.joinAgree-check-all {display: inline-block; margin-bottom: 2.8rem;}
+.joinAgree-check-all.frm-choice input[type='checkbox'] + label {padding-left: 3.9rem; font-size: 2.4rem; font-weight: 600;}
+.joinAgree-list {border-top: 1px solid var(--color-gray10);}
+.joinAgree-row {padding-top: 1.6rem; padding-bottom: 1.6rem; border-bottom: 1px solid var(--color-gray10);}
+.joinAgree-row-head {position: relative; padding-top: 1rem; padding-bottom: 1rem; font-size: 0; cursor: pointer;}
+.joinAgree-row-head::after {content:""; position: absolute; right: 1.44rem; top: 50%; transform: translateY(-50%) rotate(-180deg); width: 1.52rem; height: 0.76rem; background: url('../img/qa-icon-top.png') no-repeat center center/contain; transition: 0.3s;}
+.joinAgree-row-head.active::after {transform: translateY(-50%) rotate(0);}
+.joinAgree-check {display: inline-block;}
+.joinAgree-row-body {display: none; margin-top: 1rem; font-size: 0;}
+.joinAgree-row-body textarea {width: 100%; height: 15.4rem; padding: 2.8rem 2.36rem; font-size: 2rem; font-weight: 300; color: var(--color-gray2); border: none; background: var(--color-gray8); resize: none;}
+
+/* > 회원가입 - 정보입력 */
+.joinDetail {}
+.joinDetail-wrap {}
+.joinDetail-box {}
+.joinDetail-box:not(:first-child) {padding-top: 4rem;}
+.joinDetail-box:not(:last-child) {padding-bottom: 4rem; border-bottom: 1px solid var(--color-gray10);}
+.joinDetail-head {}
+.joinDetail-title {margin-bottom: 2rem; font-size: 2.4rem; font-weight: 600; color: var(--color-black2);}
+.joinDetail-head .ui-btn.st3 {height: 6.4rem;}
+.joinDetail-body {padding-top: 2rem;}
+.joinDetail-btn-box {margin-top: 0.6rem; font-size: 0;}
+.joinDetail-btn-box .ui-btn.st3 {display: inline-block; vertical-align: middle; width: calc((100% - 0.8rem) / 2);}
+.joinDetail-btn-box .ui-btn.st3 ~ .ui-btn.st3 {margin-left: 0.8rem;}
+
+
+
+
 
 /* 메인 팝업 배너 */
 .main-popup {position: fixed; bottom: -100%; left: 50%; transform: translateX(-50%); width: 100%; max-width: 1440px; z-index: 550; transition: 1s ease-in-out;}

@@ -20,7 +20,7 @@ a.ui-btn.sizeS {line-height: 3.5rem;}
 
 .ui-btn.st1 {color: var(--color-white); background-color: var(--color-main);}
 .ui-btn.st2 {border: 0.16rem solid var(--color-main); color: var(--color-main); background-color: var(--color-white);}
-.ui-btn.st3 {height: 5.6rem; padding: 0 2.8rem; background: var(--color-white); border: 1px solid var(--color-gray5); font-size: 2.16rem; font-weight: 500; color: var(--color-black3); border-radius: 0.8rem;}
+.ui-btn.st3 {height: 5.6rem; padding: 0 2.8rem; background: var(--color-gray8); border: 1px solid var(--color-gray5); font-size: 2.16rem; font-weight: 500; color: var(--color-black3); border-radius: 0.8rem;}
 .ui-btn.stBlack {color: var(--color-white); background-color: var(--color-black);}
 .ui-btn.stWhite {color: var(--color-black); background-color: var(--color-white); border: 1px solid var(--color-black);}
 
@@ -414,7 +414,7 @@ a.ui-btn.sizeS {line-height: 3.5rem;}
 .cp-cart.order .cp-cart-item ~ .cp-cart-item {margin: 0;}
 
 .cp-qty {overflow: hidden; display: flex; align-items: center; border: 1px solid var(--color-gray5); border-radius: 0.8rem;}
-.cp-qty .ui-btn {position: relative; width: 5.2rem; height: 5.2rem; padding: 0; border: 0; color: var(--color-gray2); text-indent: -9999px;}
+.cp-qty .ui-btn {position: relative; width: 5.2rem; height: 5.2rem; padding: 0; border: 0; color: var(--color-gray2); background: var(--color-white); text-indent: -9999px;}
 .cp-qty .ui-btn.minus:before {content: "-"; display: flex; position: absolute; top: 0; left: 0; width: 100%; height: 100%; text-indent: 0; line-height: 1; text-align: center; align-items: center; justify-content: center;}
 .cp-qty .ui-btn.plus:before {content: "+"; display: flex; position: absolute; top: 0; left: 0; width: 100%; height: 100%; text-indent: 0; line-height: 1; text-align: center; align-items: center; justify-content: center;}
 .cp-qty input[type='text'] {width: 5.2rem; height: 5.2rem; border: 0; border-left: 1px solid var(--color-gray5); border-right: 1px solid var(--color-gray5); font-size: 2.16rem; font-weight: 500; color: var(--color-black3); text-align: center;}
