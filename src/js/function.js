@@ -137,4 +137,11 @@ export const arcodianF = () => {
       $this.next().slideUp();
     }
   });
+  
+  let arcoCheck = $('.arcodianBtn .frm-choice');
+  if(arcoCheck) {
+    arcoCheck.click(function(e){ 
+        event.stopPropagation();   
+    });
+  }
 }
