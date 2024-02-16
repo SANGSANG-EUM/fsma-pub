@@ -188,6 +188,13 @@
 .joinType-body .ui-btn.stWhite .joinType-text1 {color: var(--color-black3);}
 .joinType-body .ui-btn.stWhite .joinType-text2 {color: var(--color-gray3);}
 
+/* > 회원가입 - 약관동의 */
+#contents.joinAgree {padding-top: 6.4rem;}
+.joinAgree-wrap {}
+.joinAgree-head {}
+.joinAgree-head p {font-size: 3.6rem; font-weight: 400; color: var(--color-black2); line-height: 4.8rem;}
+.joinAgree-head p b {font-weight: 700; color: var(--color-main);}
+
 /* 메인 팝업 배너 */
 .main-popup {position: fixed; bottom: -100%; left: 50%; transform: translateX(-50%); width: 100%; max-width: 1440px; z-index: 550; transition: 1s ease-in-out;}
 .main-popup.active {bottom: 0;}
