@@ -216,6 +216,9 @@
 .joinDetail-title {margin-bottom: 2rem; font-size: 2.4rem; font-weight: 600; color: var(--color-black2);}
 .joinDetail-head .ui-btn.st3 {height: 6.4rem;}
 .joinDetail-body {padding-top: 2rem;}
+.joinDetail-btn-box {margin-top: 0.6rem; font-size: 0;}
+.joinDetail-btn-box .ui-btn.st3 {display: inline-block; vertical-align: middle; width: calc((100% - 0.8rem) / 2);}
+.joinDetail-btn-box .ui-btn.st3 ~ .ui-btn.st3 {margin-left: 0.8rem;}
 
 
 
