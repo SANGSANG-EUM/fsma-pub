@@ -37,6 +37,8 @@
     .gap {gap: 15px;}
 
     #cp-dockbar, .cp-btnbar {position: inherit; transform: none;}
+
+    .pop-imsi .popup {position: absolute;}
   </style>
 </head>
 <body>
@@ -835,8 +837,7 @@
       <div class="sb_section">
         <h5>-- 팝업 레이아웃1</h5>
         <!--
-          * 팝업 사용시 pop-imsi 는 삭제
-          * .popup의 css중 position: fixed;로 변경 하여 사용
+          * 팝업 사용시 pop-imsi 안에만 사용
         -->
         <div class="pop-imsi">
           <div class="popup type01" id="">
@@ -860,8 +861,7 @@
       <div class="sb_section">
         <h5>-- 팝업 레이아웃2</h5>
         <!--
-          * 팝업 사용시 pop-imsi 는 삭제
-          * .popup의 css중 position: fixed;로 변경 하여 사용
+          * 팝업 사용시 pop-imsi 안에만 사용
         -->
         <div class="pop-imsi">
           <div class="popup type02" id="">
