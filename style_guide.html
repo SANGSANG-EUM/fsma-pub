@@ -38,6 +38,7 @@
 
     #cp-dockbar, .cp-btnbar {position: inherit; transform: none;}
 
+    .pop-imsi {padding: 30px; text-align: center;}
     .pop-imsi .popup {position: absolute;}
   </style>
 </head>
@@ -838,20 +839,36 @@
         <h5>-- 팝업 레이아웃1</h5>
         <!--
           * 팝업 사용시 pop-imsi 안에만 사용
+          * 팝업 열기 버튼에 class="popup-open", data-popupId="팝업id" 삽입 필요
         -->
         <div class="pop-imsi">
-          <div class="popup type01" id="">
+          <button type="button" class="ui-btn st3 popup-open" data-popupId="thisPopId">팝업 버튼</button>
+          <div class="popup type01" id="thisPopId">
             <div class="pop-inner">
               <div class="pop-top">
                 <p class="tit">팝업 제목</p>
               </div>
-              <div class="pop-content">
-                <div style="height: 1000px;">
-                  asdasdklasjkldasjda;lsdkas;ldk
+              <div class="pop-content line">
+                <div class="pop-content-in" style="height: 500px;">
+                  <p class="pop-content-txt pop-content-txt1">안내팝업 내용 영역입니다. 안내팝업 내용 영역입니다. 안내팝업 내용 영역입니다.</p>
+                  <p class="pop-content-txt pop-content-txt2">안내팝업의 하위 내용 영역입니다. 안내팝업의 하위 내용 영역입니다. 안내팝업의 하위 내용 영역입니다. 안내팝업의 하위 내용 영역입니다. 안내팝업의 하위 내용 영역입니다. 안내팝업의 하위 내용 영역입니다.</p>
+                  <div class="pop-result">
+                    <div class="pop-result-item">
+                      <p class="pop-result-title">회원이름영역</p>
+                      <p class="pop-result-text">고유번호 : 22012617052419</p>
+                      <p class="pop-result-text">사업자등록번호 : 000-00-00000</p>
+                    </div>
+                    <div class="pop-result-item">
+                      <p class="pop-result-title">회원이름영역</p>
+                      <p class="pop-result-text">고유번호 : 22012617052419</p>
+                      <p class="pop-result-text">사업자등록번호 : 000-00-00000</p>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="pop-btm">
-                <button type="button" class="btn">취소</button>
+                <button type="button" class="ui-btn round stBlack">확인</button>
+                <button type="button" class="ui-btn round stWhite close">취소</button>
               </div>
             </div>
           </div>
@@ -862,17 +879,19 @@
         <h5>-- 팝업 레이아웃2</h5>
         <!--
           * 팝업 사용시 pop-imsi 안에만 사용
+          * 팝업 열기 버튼에 class="popup-open", data-popupId="팝업id" 삽입 필요
         -->
         <div class="pop-imsi">
-          <div class="popup type02" id="">
+          <button type="button" class="ui-btn st3 popup-open" data-popupId="thisPopId2">팝업 버튼</button>
+          <div class="popup type02" id="thisPopId2">
             <div class="pop-inner">
               <div class="pop-top">
                 <p class="tit">팝업 제목</p>
                 <button type="button" class="btn close"></button>
               </div>
               <div class="pop-content">
-                <div style="height: 1000px;">
-                  asdasdklasjkldasjda;lsdkas;ldk
+                <div class="pop-content-in" style="height: 1000px;">
+                  팝업 컨텐츠 내용입니다.
                 </div>
               </div>
             </div>
