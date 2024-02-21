@@ -94,9 +94,9 @@ a.ui-btn.sizeS {line-height: 3.5rem;}
 .search .keyword::placeholder {color: var(--color-gray3);}
 .search .submit {position: absolute; top: 50%; right: 1.72rem; transform: translateY(-50%); width: 3.2rem; height: 3.2rem; background: url('../img/search-gray.svg') no-repeat center/contain;}
 
-.id-confirm {display: flex; align-items: center; font-size: 0;}
-.id-confirm .frm-input {width: 100%;}
-.id-confirm .ui-btn.st3 {margin-left: 0.52rem;}
+.input-button {display: flex; align-items: center; font-size: 0;}
+.input-button .frm-input {width: 100%;}
+.input-button .ui-btn.st3 {margin-left: 0.52rem;}
 
 .phone {font-size: 0;}
 .phone .frm-input {display: inline-block; vertical-align: middle; width: calc((100% - 5.6rem) / 3);}
